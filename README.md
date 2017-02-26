@@ -10,18 +10,19 @@ Custom Oh My Zsh folder and other utilities.
 **IMPORTANT:** install prerequisites before install Oh My Custom Zsh.
 
   1. [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - recommended install with curl
-  2. [nvm](https://github.com/creationix/nvm) - recommended install with brew
+  2. [NVM](https://github.com/creationix/nvm) - recommended install with brew
   3. [rbenv](https://github.com/rbenv/rbenv) - recommended install with brew
-  4. [PHP](https://php-osx.liip.ch) - recommended install with brew (?)
+  4. [PHP](https://php-osx.liip.ch) - recommended install with brew
+  4. [Ansible](https://www.ansible.com) - recommended install with brew
   5. [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with brew
   6. [z](https://github.com/rupa/z) - recommended install with brew
-  7. [Composer](https://getcomposer.org)
-  8. [Gulp](http://gulpjs.com)
-  9. [Bower](https://bower.io)
-  10. [Yarn](https://yarnpkg.com)
-  11. [Vagrant](https://www.vagrantup.com)
-  12. [PHPCS and PHPCBF](https://github.com/squizlabs/PHP_CodeSniffer)
-  13. [MAMP](https://www.mamp.info)
+  7. [Composer](https://getcomposer.org) - recommended install from website
+  8. [Gulp](http://gulpjs.com) - recommended install with npm
+  9. [Bower](https://bower.io) - recommended install with npm
+  10. [Yarn](https://yarnpkg.com) - recommended install with npm
+  11. [Vagrant](https://www.vagrantup.com) - recommended install from website
+  12. [PHPCS and PHPCBF](https://github.com/squizlabs/PHP_CodeSniffer) - recommended install from website
+  13. [MAMP](https://www.mamp.info) - recommended install from website
 
 ### Basic Installation
 
