@@ -2,6 +2,7 @@ Oh My Custom Zsh
 ================
 
 Custom Oh My Zsh folder and other utilities.
+
 **DISCLAIMER:** this repo is specific for my personal workflow and configuration (macOS and Dropbox). Not use, fork and customize if you like it.
 
 ## Getting Started
