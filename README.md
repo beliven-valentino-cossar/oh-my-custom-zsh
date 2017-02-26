@@ -10,7 +10,7 @@ Custom Oh My Zsh folder and other utilities.
 **IMPORTANT:** install prerequisites before install Oh My Custom Zsh.
 
   1. [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - recommended install with curl
-  2. [Mackup](https://github.com/lra/mackup)
+  2. [Mackup](https://github.com/lra/mackup) - recommended install with brew
   3. [NVM](https://github.com/creationix/nvm) - recommended install with brew
   4. [rbenv](https://github.com/rbenv/rbenv) - recommended install with brew
   5. [PHP](https://php-osx.liip.ch) - recommended install with brew
