@@ -66,7 +66,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nano'
 else
-  export EDITOR='sublime'
+  export EDITOR='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 fi
 
 # Compilation flags
