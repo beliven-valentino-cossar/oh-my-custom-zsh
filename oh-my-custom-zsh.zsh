@@ -82,7 +82,7 @@ abet-open() {
   esac
 }
 alias _abet-trellis="cd ~/Dropbox/Projects/ensoul/abetlaminati/_trellis-abetlaminati.com"
-alias _abet-decori="cd ~/Dropbox/Ensoul\ Collaboration/Clienti/Abet\ Laminati/_file-decori-abetlaminati.com"
+alias _abet-decori="cd ~/Dropbox/Ensoul\ Collaboration/Clienti\ \&\ Progetti/Abet\ Laminati/_file-decori-abetlaminati.com/"
 alias abet-main="cd ~/Dropbox/Projects/ensoul/abetlaminati/abetlaminati.com"
 alias abet-au="cd ~/Dropbox/Projects/ensoul/abetlaminati/au.abetlaminati.com"
 alias abet-be="cd ~/Dropbox/Projects/ensoul/abetlaminati/be.abetlaminati.com"
