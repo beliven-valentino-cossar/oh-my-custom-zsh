@@ -60,22 +60,22 @@ abet-open() {
     national)
       if [ ! -z "$2" ] && [ $2 == $SELECT ]; then
         for A in ${SITE_NAME_NATIONAL[@]}; do
-          sublime -a $PATH_SITE$A
+          st $PATH_SITE$A
         done
       else
         for A in ${SITE_NAME_NATIONAL[@]}; do
-          sublime -a $PATH_SITE$A$PATH_THEME
+          st $PATH_SITE$A$PATH_THEME
         done
       fi
     ;;
     *)
       if [ ! -z "$2" ] && [ $2 == $SELECT ]; then
         for A in ${SITE_NAME_ALL[@]}; do
-          sublime -a $PATH_SITE$A
+          st $PATH_SITE$A
         done
       else
         for A in ${SITE_NAME_ALL[@]}; do
-          sublime -a $PATH_SITE$A$PATH_THEME
+          st $PATH_SITE$A$PATH_THEME
         done
       fi
     ;;
