@@ -17,7 +17,7 @@ alias cp="${aliases[cp]:-cp} -vi"
 alias mv="${aliases[mv]:-mv} -vi"
 alias grep="grep --color=auto"
 alias rmds="find . -name '*.DS_Store' -type f -delete"
-alias hosts="sst /etc/hosts"
+alias hosts="st /etc/hosts"
 alias resetls="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -seed -r -f -v -domain local -domain user -domain system"
 alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;"
 
