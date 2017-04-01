@@ -33,10 +33,12 @@ alias phpcs="php /usr/local/bin/phpcs.phar"
 alias phpcbf="php /usr/local/bin/phpcbf.phar"
 
 # Vagrant
-alias va="vagrant"
 alias vau="vagrant up"
 alias vah="vagrant halt"
 alias vas="vagrant status"
+alias var="vagrant reload"
+alias vaup="vagrant up --provision"
+alias vass="vagrant ssh"
 
 # Themes folder aliases
 alias bedsage="cd web/app/themes/sage"
