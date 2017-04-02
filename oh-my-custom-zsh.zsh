@@ -83,6 +83,23 @@ abet-open() {
     ;;
   esac
 }
+abet-composer-update() {
+  PATH_SITE="/Dropbox/Projects/ensoul/abetlaminati/"
+  SITE_NAME_NATIONAL=("au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
+  SITE_NAME_ALL=("abetlaminati.com" "au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
+  case $1 in
+    national)
+      for A in ${SITE_NAME_NATIONAL[@]}; do
+        composer update -d $HOME$PATH_SITE$A
+      done
+    ;;
+    *)
+      for A in ${SITE_NAME_ALL[@]}; do
+        composer update -d $HOME$PATH_SITE$A
+      done
+    ;;
+  esac
+}
 alias _abet-trellis="cd ~/Dropbox/Projects/ensoul/abetlaminati/_trellis-abetlaminati.com"
 alias _abet-decori="cd ~/Dropbox/Ensoul\ Collaboration/Clienti\ \&\ Progetti/Abet\ Laminati/_file-decori-abetlaminati.com/"
 alias abet-main="cd ~/Dropbox/Projects/ensoul/abetlaminati/abetlaminati.com"
