@@ -88,16 +88,46 @@ abet-open() {
   esac
 }
 abet-composer() {
+  composer-install() {
+    COMPOSER_CACHE_PATH="$HOME/.composer/cache"
+    VENDOR_PATH="/vendor"
+    WP_PATH="/web/wp"
+    PLUGINS_PATH="/web/app/plugins"
+    DELETED_MSG="Deleted "
+    COMPOSER_LOCK="/composer.lock"
+    # Empty composer cache and delete composer cache folder
+    /usr/local/bin/composer clearcache
+    if [ -w $COMPOSER_CACHE_PATH ]; then
+      echo $DELETED_MSG$COMPOSER_CACHE_PATH
+      /bin/rm -rf "$COMPOSER_CACHE_PATH"
+    fi
+    # Check if vendor folder exists and is writable and delete all the installed dependencies
+    if [ -w $1$VENDOR_PATH ]; then
+      echo $DELETED_MSG$1$VENDOR_PATH"/*"
+      /bin/rm -rf "$1$VENDOR_PATH"/*
+    fi
+    # Check if wp folder exists and is writable and delete it
+    if [ -w $1$WP_PATH ]; then
+      echo $DELETED_MSG$1$WP_PATH
+      /bin/rm -rf "$1$WP_PATH"
+    fi
+    # Check if plugins folder exists and is writable and delete all the installed plugins
+    if [ -w $1$PLUGINS_PATH ]; then
+      echo $DELETED_MSG$1$PLUGINS_PATH"/*"
+      /bin/rm -rf "$1$PLUGINS_PATH"/*
+    fi
+    # Check if composer.lock file exists and is writable and delete it
+    if [ -w $1$COMPOSER_LOCK ]; then
+      echo $DELETED_MSG$1$COMPOSER_LOCK
+      /bin/rm -f "$1$COMPOSER_LOCK"
+    fi
+    # Install the project dependencies from the composer.json file
+    /usr/local/bin/composer install -d $1
+  }
   SELECT=("update" "install")
-  PATH_SITE="/Dropbox/Projects/ensoul/abetlaminati/"
+  PATH_SITE="$HOME/Dropbox/Projects/ensoul/abetlaminati/"
   SITE_NAME_NATIONAL=("au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
   SITE_NAME_ALL=("abetlaminati.com" "au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
-  COMPOSER_CACHE_PATH="/.composer/cache"
-  VENDOR_PATH="/vendor"
-  WP_PATH="/web/wp"
-  PLUGINS_PATH="/web/app/plugins"
-  DELETED_MSG="Deleted "
-  COMPOSER_LOCK="/composer.lock"
   # Update composer to the latest version
   /usr/local/bin/composer self-update
   case $2 in
@@ -105,38 +135,12 @@ abet-composer() {
       if [ ! -z "$1" ] && [ $1 == ${SELECT[1]} ]; then
         for A in ${SITE_NAME_NATIONAL[@]}; do
           # Update dependencies to the latest version according to composer.json, and update the composer.lock file
-          /usr/local/bin/composer update -d $HOME$PATH_SITE$A
+          /usr/local/bin/composer update -d $PATH_SITE$A
         done
       elif [ ! -z "$1" ] && [ $1 == ${SELECT[2]} ]; then
         for A in ${SITE_NAME_NATIONAL[@]}; do
-          # Empty composer cache and delete composer cache folder
-          /usr/local/bin/composer clearcache
-          if [ -w $HOME$COMPOSER_CACHE_PATH ]; then
-            echo $DELETED_MSG$HOME$COMPOSER_CACHE_PATH
-            /bin/rm -rf "$HOME$COMPOSER_CACHE_PATH"
-          fi
-          # Check if vendor folder exists and is writable and delete all the installed dependencies
-          if [ -w $HOME$PATH_SITE$A$VENDOR_PATH ]; then
-            echo $DELETED_MSG$HOME$PATH_SITE$A$VENDOR_PATH"/*"
-            /bin/rm -rf "$HOME$PATH_SITE$A$VENDOR_PATH"/*
-          fi
-          # Check if wp folder exists and is writable and delete it
-          if [ -w $HOME$PATH_SITE$A$WP_PATH ]; then
-            echo $DELETED_MSG$HOME$PATH_SITE$A$WP_PATH
-            /bin/rm -rf "$HOME$PATH_SITE$A$WP_PATH"
-          fi
-          # Check if plugins folder exists and is writable and delete all the installed plugins
-          if [ -w $HOME$PATH_SITE$A$PLUGINS_PATH ]; then
-            echo $DELETED_MSG$HOME$PATH_SITE$A$PLUGINS_PATH"/*"
-            /bin/rm -rf "$HOME$PATH_SITE$A$PLUGINS_PATH"/*
-          fi
-          # Check if composer.lock file exists and is writable and delete it
-          if [ -w $HOME$PATH_SITE$A$COMPOSER_LOCK ]; then
-            echo $DELETED_MSG$HOME$PATH_SITE$A$COMPOSER_LOCK
-            /bin/rm -f "$HOME$PATH_SITE$A$COMPOSER_LOCK"
-          fi
-          # Install the project dependencies from the composer.json file
-          /usr/local/bin/composer install -d $HOME$PATH_SITE$A
+          # Call composer-install function to install project dependencies from the composer.json file
+          composer-install $PATH_SITE$A
         done
       fi
     ;;
@@ -144,38 +148,12 @@ abet-composer() {
       if [ ! -z "$1" ] && [ $1 == ${SELECT[1]} ]; then
         for A in ${SITE_NAME_ALL[@]}; do
           # Update dependencies to the latest version according to composer.json, and update the composer.lock file
-          /usr/local/bin/composer update -d $HOME$PATH_SITE$A
+          /usr/local/bin/composer update -d $PATH_SITE$A
         done
       elif [ ! -z "$1" ] && [ $1 == ${SELECT[2]} ]; then
         for A in ${SITE_NAME_ALL[@]}; do
-          # Empty composer cache and delete composer cache folder
-          /usr/local/bin/composer clearcache
-          if [ -w $HOME$COMPOSER_CACHE_PATH ]; then
-            echo $DELETED_MSG$HOME$COMPOSER_CACHE_PATH
-            /bin/rm -rf "$HOME$COMPOSER_CACHE_PATH"
-          fi
-          # Check if vendor folder exists and is writable and delete all the installed dependencies
-          if [ -w $HOME$PATH_SITE$A$VENDOR_PATH ]; then
-            echo $DELETED_MSG$HOME$PATH_SITE$A$VENDOR_PATH"/*"
-            /bin/rm -rf "$HOME$PATH_SITE$A$VENDOR_PATH"/*
-          fi
-          # Check if wp folder exists and is writable and delete it
-          if [ -w $HOME$PATH_SITE$A$WP_PATH ]; then
-            echo $DELETED_MSG$HOME$PATH_SITE$A$WP_PATH
-            /bin/rm -rf "$HOME$PATH_SITE$A$WP_PATH"
-          fi
-          # Check if plugins folder exists and is writable and delete all the installed plugins
-          if [ -w $HOME$PATH_SITE$A$PLUGINS_PATH ]; then
-            echo $DELETED_MSG$HOME$PATH_SITE$A$PLUGINS_PATH"/*"
-            /bin/rm -rf "$HOME$PATH_SITE$A$PLUGINS_PATH"/*
-          fi
-          # Check if composer.lock file exists and is writable and delete it
-          if [ -w $HOME$PATH_SITE$A$COMPOSER_LOCK ]; then
-            echo $DELETED_MSG$HOME$PATH_SITE$A$COMPOSER_LOCK
-            /bin/rm -f "$HOME$PATH_SITE$A$COMPOSER_LOCK"
-          fi
-          # Install the project dependencies from the composer.json file
-          /usr/local/bin/composer install -d $HOME$PATH_SITE$A
+          # Call composer-install function to install project dependencies from the composer.json file
+          composer-install $PATH_SITE$A
         done
       fi
     ;;
