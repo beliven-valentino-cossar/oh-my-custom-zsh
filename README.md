@@ -31,36 +31,36 @@ Custom Oh My Zsh folder and other utilities.
 
   1. Clone this repository in your $HOME folder.
 
-    ```sh
-    git clone https://github.com/valentinocossar/oh-my-custom-zsh.git ~/.oh-my-custom-zsh
-    ```
+  ```sh
+  git clone https://github.com/valentinocossar/oh-my-custom-zsh.git ~/.oh-my-custom-zsh
+  ```
 
   2. If your default shell is already /bin/zsh, backup (if you want) and delete these two files.
 
-    ```sh
-    rm ~/.zshrc
-    rm ~/.zprofile
-    ```
+  ```sh
+  rm ~/.zshrc
+  rm ~/.zprofile
+  ```
 
   3. Create symbolic links of `.zshrc` and `.zprofile` into your $HOME folder.
 
-    ```sh
-    ln -s $HOME/.oh-my-custom-zsh/zfiles/.zshrc $HOME/.zshrc
-    ln -s $HOME/.oh-my-custom-zsh/zfiles/.zprofile $HOME/.zprofile
-    ```
+  ```sh
+  ln -s $HOME/.oh-my-custom-zsh/zfiles/.zshrc $HOME/.zshrc
+  ln -s $HOME/.oh-my-custom-zsh/zfiles/.zprofile $HOME/.zprofile
+  ```
 
   4. Create symbolic links of `.mackup.cfg` and `.mackup` into your $HOME folder.
 
-    ```sh
-    ln -s $HOME/.oh-my-custom-zsh/mackup/.mackup.cfg $HOME/.mackup.cfg
-    ln -s $HOME/.oh-my-custom-zsh/mackup/.mackup $HOME/.mackup
-    ```
+  ```sh
+  ln -s $HOME/.oh-my-custom-zsh/mackup/.mackup.cfg $HOME/.mackup.cfg
+  ln -s $HOME/.oh-my-custom-zsh/mackup/.mackup $HOME/.mackup
+  ```
 
   5. Restore files with mackup.
 
-    ```sh
-    mackup restore
-    ```
+  ```sh
+  mackup restore
+  ```
 
   6. Start a new terminal session.
 
