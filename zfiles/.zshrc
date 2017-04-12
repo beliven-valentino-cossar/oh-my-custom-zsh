@@ -85,5 +85,6 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Spaceship theme settings
+SPACESHIP_PROMPT_TRUNC=5
 SPACESHIP_PROMPT_SYMBOL="→"
 SPACESHIP_RUBY_SYMBOL="✦"
