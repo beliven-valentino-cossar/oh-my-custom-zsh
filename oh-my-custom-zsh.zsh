@@ -39,6 +39,7 @@ alias vas="vagrant status"
 alias var="vagrant reload"
 alias vaup="vagrant up --provision"
 alias vass="vagrant ssh"
+alias vabu="vagrant box update"
 
 # Themes folder aliases
 alias bedsage="cd web/app/themes/sage"
