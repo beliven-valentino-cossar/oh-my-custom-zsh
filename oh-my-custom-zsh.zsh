@@ -49,8 +49,7 @@ alias wpshaba="cd wp-content/themes/shaba"
 
 # Ensoul aliases
 alias rankz="cd ~/Dropbox/Projects/ensoul/rankz/rankz.dev/web/app/plugins/rankz"
-alias capistrano-trellis-bedrock-wpcli="cd ~/Dropbox/Projects/ensoul/capistrano-trellis-bedrock-wpcli"
-alias capistrano-bedrock="cd ~/Dropbox/Projects/ensoul/capistrano-bedrock"
+alias trellis-database-and-uploads-migration="cd ~/Dropbox/Projects/ensoul/trellis-database-and-uploads-migration"
 
 # Abet Laminati aliases and functions
 abet-open() {
