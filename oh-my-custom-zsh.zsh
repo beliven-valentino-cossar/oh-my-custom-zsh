@@ -20,6 +20,8 @@ alias rmds="find . -name '*.DS_Store' -type f -delete"
 alias hosts="st /etc/hosts"
 alias resetls="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -seed -r -f -v -domain local -domain user -domain system"
 alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;"
+alias printdropboxconflict="find ~/Dropbox -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -print"
+alias cleandropboxconflict="find ~/Dropbox -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -exec rm -f {} \;"
 
 # Oh My Zsh and Oh My Custom Zsh
 alias ohmyzsh="cd ~/.oh-my-zsh"
