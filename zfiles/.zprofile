@@ -9,10 +9,6 @@ export NVM_DIR="$HOME/.nvm"
 # Load Homebrew PHP stable into the shell session
 export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 
-# Ansible
-# Load Homebrew Ansible into the shell session
-export PATH="/usr/local/opt/ansible@2.0/bin:$PATH"
-
 # rbenv
 # Load Homebrew rbenv into shell session
 # To install a new version of Ruby with rbenv, use this: rbenv install 2.4.0

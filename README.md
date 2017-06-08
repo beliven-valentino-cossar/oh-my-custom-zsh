@@ -11,21 +11,26 @@ Custom Oh My Zsh folder and other utilities.
 
 **IMPORTANT:** install prerequisites before install Oh My Custom Zsh.
 
-  1. [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - recommended install with curl
-  2. [Mackup](https://github.com/lra/mackup) - recommended install with brew
-  3. [NVM](https://github.com/creationix/nvm) - recommended install with brew
-  4. [rbenv](https://github.com/rbenv/rbenv) - recommended install with brew
-  5. [PHP](https://php-osx.liip.ch) - recommended install with brew
-  6. [Ansible](https://www.ansible.com) - recommended install with brew
-  7. [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with brew
-  8. [z](https://github.com/rupa/z) - recommended install with brew
-  9. [Composer](https://getcomposer.org) - recommended install from website
-  10. [Gulp](http://gulpjs.com) - recommended install with npm
-  11. [Bower](https://bower.io) - recommended install with npm
-  12. [Yarn](https://yarnpkg.com) - recommended install with npm
-  13. [Vagrant](https://www.vagrantup.com) - recommended install from website
-  14. [PHPCS and PHPCBF](https://github.com/squizlabs/PHP_CodeSniffer) - recommended install from website
-  15. [MAMP](https://www.mamp.info) - recommended install from website
+  * [Xcode](https://developer.apple.com/xcode) - recommended install from Mac App Store
+  * [Command Line Tools](https://developer.apple.com/xcode/features) - recommended install with `xcode-select --install`
+  * [Homebrew](https://brew.sh/index_it.html) - recommended install with from website
+  * [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - recommended install with curl
+  * [Mackup](https://github.com/lra/mackup) - recommended install with brew
+  * [NVM](https://github.com/creationix/nvm) - recommended install with brew
+  * [rbenv](https://github.com/rbenv/rbenv) - recommended install with brew
+  * [PHP](https://php-osx.liip.ch) - recommended install with brew
+  * [Python](https://www.python.org) - recommended install with brew
+  * [passlib](https://pypi.python.org/pypi/passlib) - recommended install with `pip install passlib`
+  * [Ansible](https://www.ansible.com) - recommended install with `pip install ansible==2.0.2.0`
+  * [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with brew
+  * [z](https://github.com/rupa/z) - recommended install with brew
+  * [Composer](https://getcomposer.org) - recommended install from website
+  * [Gulp](http://gulpjs.com) - recommended install with npm
+  * [Bower](https://bower.io) - recommended install with npm
+  * [Yarn](https://yarnpkg.com) - recommended install with npm
+  * [Vagrant](https://www.vagrantup.com) - recommended install from website
+  * [PHPCS and PHPCBF](https://github.com/squizlabs/PHP_CodeSniffer) - recommended install from website
+  * [MAMP](https://www.mamp.info) - recommended install from website
 
 ### Basic Installation
 
@@ -70,13 +75,25 @@ Custom Oh My Zsh folder and other utilities.
 
 ### Custom plugins
 
-  1. [sublime](https://github.com/valentinocossar/sublime)
-  2. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-  3. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+  * [sublime](https://github.com/valentinocossar/sublime)
+  * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+  * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 ### Custom themes
 
-  1. [spaceship](https://github.com/denysdovhan/spaceship-zsh-theme)
+  * [spaceship](https://github.com/denysdovhan/spaceship-zsh-theme)
+
+## Other Homebrew formulas
+
+  * ack
+  * guetzli
+  * hub
+  * sudolikeaboss
+  * dnsmasq
+  * mas
+  * tidy-html5
+  * tree
+  * wget
 
 ## Authors
 
