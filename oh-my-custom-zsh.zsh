@@ -189,3 +189,6 @@ alias remida="cd ~/Dropbox/Projects/personal/remida"
 alias keliakos="cd ~/Dropbox/Projects/personal/keliakos"
 alias chiarezzalavoro="cd ~/Dropbox/Projects/personal/chiarezzalavoro"
 alias immagine="cd ~/Dropbox/Projects/personal/immagine"
+
+# Personal aliases
+alias invoiceplane="cd ~/Dropbox/Projects/personal/invoiceplane"
