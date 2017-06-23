@@ -181,7 +181,8 @@ alias abet-us="cd ~/Dropbox/Projects/ensoul/abetlaminati/us.abetlaminati.com"
 
 # Feltrinelli aliases
 alias _feltrinelli-trellis="cd ~/Dropbox/Projects/ensoul/feltrinelli/_trellis-fondazionefeltrinelli.it"
-alias feltrinelli="cd ~/Dropbox/Projects/ensoul/feltrinelli/fondazionefeltrinelli.it"
+alias fondazionefeltrinelli="cd ~/Dropbox/Projects/ensoul/feltrinelli/fondazionefeltrinelli.it"
+alias scuoladicittadinanzaeuropea="cd ~/Dropbox/Projects/ensoul/feltrinelli/scuoladicittadinanzaeuropea.it"
 
 # Other customers aliases
 alias ellegiti="cd ~/Dropbox/Projects/personal/ellegiti"
