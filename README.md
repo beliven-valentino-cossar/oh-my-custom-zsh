@@ -23,7 +23,6 @@ Custom Oh My Zsh folder and other utilities.
   * [passlib](https://pypi.python.org/pypi/passlib) - recommended install with `pip install passlib`
   * [Ansible](https://www.ansible.com) - recommended install with `pip install ansible==2.0.2.0`
   * [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with brew
-  * [z](https://github.com/rupa/z) - recommended install with brew
   * [Composer](https://getcomposer.org) - recommended install from website
   * [Gulp](http://gulpjs.com) - recommended install with npm
   * [Bower](https://bower.io) - recommended install with npm
