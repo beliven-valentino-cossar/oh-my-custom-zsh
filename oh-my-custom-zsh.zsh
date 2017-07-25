@@ -52,7 +52,7 @@ alias wpshaba="cd wp-content/themes/shaba"
 
 # Ensoul aliases
 alias rankz="cd ~/Dropbox/Projects/ensoul/rankz/rankz.dev/web/app/plugins/rankz"
-alias trellis-database-and-uploads-migration="cd ~/Dropbox/Projects/ensoul/trellis-database-and-uploads-migration"
+alias trellis-database-uploads-migration="cd ~/Dropbox/Projects/ensoul/trellis-database-uploads-migration"
 
 # Abet Laminati aliases and functions
 abet-open() {
