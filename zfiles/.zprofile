@@ -10,9 +10,13 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 
 # rbenv
-# Load Homebrew rbenv into shell session
+# Load Homebrew rbenv into the shell session
 # To install a new version of Ruby with rbenv, use this: rbenv install 2.4.0
 # To set a default Ruby version to be used in any new shell, use this: rbenv global 2.4.0
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)";
 fi
+
+# Python 2.x
+# Load Homebrew Python 2.x into the shell session
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
