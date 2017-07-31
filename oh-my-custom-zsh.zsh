@@ -162,7 +162,7 @@ abet-composer() {
     ;;
   esac
 }
-alias _abet-trellis="cd ~/Dropbox/Projects/ensoul/abetlaminati/_trellis-abetlaminati.com"
+alias _abet-trellis="cd ~/Dropbox/Projects/ensoul/abetlaminati/_trellis-abetlaminati"
 alias _abet-decori="cd ~/Dropbox/Ensoul\ Collaboration/Clienti\ \&\ Progetti/Abet\ Laminati/_file-decori-abetlaminati.com/"
 alias abet-main="cd ~/Dropbox/Projects/ensoul/abetlaminati/abetlaminati.com"
 alias abet-au="cd ~/Dropbox/Projects/ensoul/abetlaminati/au.abetlaminati.com"
@@ -180,12 +180,12 @@ alias abet-uk="cd ~/Dropbox/Projects/ensoul/abetlaminati/uk.abetlaminati.com"
 alias abet-us="cd ~/Dropbox/Projects/ensoul/abetlaminati/us.abetlaminati.com"
 
 # Feltrinelli aliases
-alias _feltrinelli-trellis="cd ~/Dropbox/Projects/ensoul/feltrinelli/_trellis-fondazionefeltrinelli.it"
+alias _feltrinelli-trellis="cd ~/Dropbox/Projects/ensoul/feltrinelli/_trellis-feltrinelli"
 alias fondazionefeltrinelli="cd ~/Dropbox/Projects/ensoul/feltrinelli/fondazionefeltrinelli.it"
 alias scuoladicittadinanzaeuropea="cd ~/Dropbox/Projects/ensoul/feltrinelli/scuoladicittadinanzaeuropea.it"
 
 # Davide Maule aliases
-alias _davidemaule-trellis="cd ~/Dropbox/Projects/ensoul/davidemaule/_trellis-davidemaule.com"
+alias _davidemaule-trellis="cd ~/Dropbox/Projects/ensoul/davidemaule/_trellis-davidemaule"
 alias davidemaule="cd ~/Dropbox/Projects/ensoul/davidemaule/davidemaule.com"
 alias davidemaule-minerva="cd ~/Dropbox/Projects/ensoul/davidemaule/minerva.davidemaule.com"
 
