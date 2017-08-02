@@ -51,8 +51,10 @@ alias wpsage="cd wp-content/themes/sage"
 alias wpshaba="cd wp-content/themes/shaba"
 
 # Ensoul aliases
-alias rankz="cd ~/Dropbox/Projects/ensoul/rankz/rankz.dev/web/app/plugins/rankz"
+alias rankz="cd ~/Dropbox/Projects/ensoul/testsage/testsage.dev/web/app/plugins/rankz"
 alias trellis-database-uploads-migration="cd ~/Dropbox/Projects/ensoul/trellis-database-uploads-migration"
+alias _testsage-trellis="cd ~/Dropbox/Projects/ensoul/testsage/_trellis-testsage"
+alias testsage="cd ~/Dropbox/Projects/ensoul/testsage/testsage.dev"
 
 # Abet Laminati aliases and functions
 abet-open() {
