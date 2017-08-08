@@ -44,11 +44,13 @@ alias vaup="vagrant up --provision"
 alias vass="vagrant ssh"
 alias vabu="vagrant box update"
 
-# Themes folder aliases
-alias bedsage="cd web/app/themes/sage"
-alias bedshaba="cd web/app/themes/shaba"
-alias wpsage="cd wp-content/themes/sage"
-alias wpshaba="cd wp-content/themes/shaba"
+# Themes folder functions
+cdbed() {
+  cd web/app/themes/$1
+}
+cdwp() {
+  cd wp-content/themes/$1
+}
 
 # Ensoul aliases
 alias rankz="cd ~/Dropbox/Projects/ensoul/testsage/testsage.dev/web/app/plugins/rankz"
