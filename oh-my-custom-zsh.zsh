@@ -26,7 +26,7 @@ alias cleandropboxconflict="find ~/Dropbox -path '*(Copia in conflitto di * [0-9
 
 # Oh My Zsh and Oh My Custom Zsh
 alias ohmyzsh="cd ~/.oh-my-zsh"
-alias ohmycustomzsh="cd ~/.oh-my-custom-zsh"
+alias customohmyzsh="cd ~/.oh-my-custom-zsh"
 
 # MAMP
 alias vhosts="st ~/Dropbox/Apps/MAMP/conf/apache/extra/httpd-vhosts.conf"
