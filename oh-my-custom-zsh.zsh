@@ -53,6 +53,7 @@ cdwp() {
 }
 
 # Ensoul aliases
+alias slate="cd ~/Dropbox/Projects/ensoul/slate"
 alias rankz="cd ~/Dropbox/Projects/ensoul/testsage/testsage.dev/web/app/plugins/rankz"
 alias trellis-database-uploads-migration="cd ~/Dropbox/Projects/ensoul/trellis-database-uploads-migration"
 alias _testsage-trellis="cd ~/Dropbox/Projects/ensoul/testsage/_trellis-testsage"
