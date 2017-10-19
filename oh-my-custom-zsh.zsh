@@ -1,8 +1,8 @@
-# GenPW - custom password generator function
-# Usage: genpw 20 (without special characters) or genpw 20 char (with special characters)
+# PWLen - custom password generator function
+# Usage: pwlen 20 (without special characters) or pwlen 20 char (with special characters)
 # Required pwgen, install with: brew install pwgen
 # For further help: pwgen -h
-genpw() {
+pwlen() {
   if [[ $2 == "char" ]]; then
     pwgen -Bcnsvy $1 1 | tr -d "\n" | pbcopy;
   else
