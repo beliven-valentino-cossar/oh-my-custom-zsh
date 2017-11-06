@@ -21,19 +21,15 @@ alias hosts="st /etc/hosts"
 alias exports="st /etc/exports"
 alias resetls="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -seed -r -f -v -domain local -domain user -domain system"
 alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;"
-alias printdropboxconflict="find ~/Dropbox -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -print"
-alias cleandropboxconflict="find ~/Dropbox -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -exec rm -f {} \;"
+alias printdropboxconflict="find ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -print"
+alias cleandropboxconflict="find ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -exec rm -f {} \;"
 
 # Oh My Zsh and Oh My Custom Zsh
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias customohmyzsh="cd ~/.oh-my-custom-zsh"
 
 # MAMP
-alias vhosts="st ~/Dropbox/Apps/MAMP/conf/apache/extra/httpd-vhosts.conf"
-
-# PHPCS and PHPCBF
-alias phpcs="php /usr/local/bin/phpcs.phar"
-alias phpcbf="php /usr/local/bin/phpcbf.phar"
+alias vhosts="st ~/Dropbox\ \(Ensoul\)/Apps/MAMP/conf/apache/extra/httpd-vhosts.conf"
 
 # Vagrant
 alias vau="vagrant up"
@@ -52,17 +48,20 @@ cdwp() {
   cd wp-content/themes/$1
 }
 
+# Personal aliases
+alias invoiceplane="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/invoiceplane"
+
 # Ensoul aliases
-alias slate="cd ~/Dropbox/Projects/ensoul/slate"
-alias rankz="cd ~/Dropbox/Projects/ensoul/testsage/testsage.dev/web/app/plugins/rankz"
-alias trellis-database-uploads-migration="cd ~/Dropbox/Projects/ensoul/trellis-database-uploads-migration"
-alias _testsage-trellis="cd ~/Dropbox/Projects/ensoul/testsage/_trellis-testsage"
-alias testsage="cd ~/Dropbox/Projects/ensoul/testsage/testsage.dev"
+alias slate="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/slate"
+alias rankz="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/testsage/testsage.dev/web/app/plugins/rankz"
+alias trellis-database-uploads-migration="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/trellis-database-uploads-migration"
+alias _testsage-trellis="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/testsage/_trellis-testsage"
+alias testsage="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/testsage/testsage.dev"
 
 # Abet Laminati aliases and functions
 abet-open() {
   SELECT="bedrock"
-  PATH_SITE="~/Dropbox/Projects/ensoul/abetlaminati/"
+  PATH_SITE="~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/"
   PATH_THEME="/web/app/themes/sage"
   SITE_NAME_NATIONAL=("au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
   SITE_NAME_ALL=("abetlaminati.com" "au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
@@ -133,7 +132,7 @@ abet-composer() {
     /usr/local/bin/composer install -d $1
   }
   SELECT=("update" "install")
-  PATH_SITE="$HOME/Dropbox/Projects/ensoul/abetlaminati/"
+  PATH_SITE="$HOME/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/"
   SITE_NAME_NATIONAL=("au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
   SITE_NAME_ALL=("abetlaminati.com" "au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
   # Update composer to the latest version
@@ -167,39 +166,36 @@ abet-composer() {
     ;;
   esac
 }
-alias _abet-trellis="cd ~/Dropbox/Projects/ensoul/abetlaminati/_trellis-abetlaminati"
-alias _abet-decori="cd ~/Dropbox/Ensoul\ Collaboration/Clienti\ \&\ Progetti/Abet\ Laminati/_file-decori-abetlaminati.com/"
-alias abet-main="cd ~/Dropbox/Projects/ensoul/abetlaminati/abetlaminati.com"
-alias abet-au="cd ~/Dropbox/Projects/ensoul/abetlaminati/au.abetlaminati.com"
-alias abet-be="cd ~/Dropbox/Projects/ensoul/abetlaminati/be.abetlaminati.com"
-alias abet-ca="cd ~/Dropbox/Projects/ensoul/abetlaminati/ca.abetlaminati.com"
-alias abet-ch="cd ~/Dropbox/Projects/ensoul/abetlaminati/ch.abetlaminati.com"
-alias abet-cn="cd ~/Dropbox/Projects/ensoul/abetlaminati/cn.abetlaminati.com"
-alias abet-de="cd ~/Dropbox/Projects/ensoul/abetlaminati/de.abetlaminati.com"
-alias abet-es="cd ~/Dropbox/Projects/ensoul/abetlaminati/es.abetlaminati.com"
-alias abet-fr="cd ~/Dropbox/Projects/ensoul/abetlaminati/fr.abetlaminati.com"
-alias abet-nl="cd ~/Dropbox/Projects/ensoul/abetlaminati/nl.abetlaminati.com"
-alias abet-pl="cd ~/Dropbox/Projects/ensoul/abetlaminati/pl.abetlaminati.com"
-alias abet-ru="cd ~/Dropbox/Projects/ensoul/abetlaminati/ru.abetlaminati.com"
-alias abet-uk="cd ~/Dropbox/Projects/ensoul/abetlaminati/uk.abetlaminati.com"
-alias abet-us="cd ~/Dropbox/Projects/ensoul/abetlaminati/us.abetlaminati.com"
+alias _abet-trellis="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/_trellis-abetlaminati"
+alias _abet-decori="cd ~/Dropbox\ \(Ensoul\)/Ensoul\ Collaboration/Clienti\ \&\ Progetti/Abet\ Laminati/_file-decori-abetlaminati.com/"
+alias abet-main="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/abetlaminati.com"
+alias abet-au="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/au.abetlaminati.com"
+alias abet-be="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/be.abetlaminati.com"
+alias abet-ca="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/ca.abetlaminati.com"
+alias abet-ch="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/ch.abetlaminati.com"
+alias abet-cn="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/cn.abetlaminati.com"
+alias abet-de="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/de.abetlaminati.com"
+alias abet-es="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/es.abetlaminati.com"
+alias abet-fr="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/fr.abetlaminati.com"
+alias abet-nl="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/nl.abetlaminati.com"
+alias abet-pl="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/pl.abetlaminati.com"
+alias abet-ru="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/ru.abetlaminati.com"
+alias abet-uk="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/uk.abetlaminati.com"
+alias abet-us="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/us.abetlaminati.com"
 
 # Feltrinelli aliases
-alias _feltrinelli-trellis="cd ~/Dropbox/Projects/ensoul/feltrinelli/_trellis-feltrinelli"
-alias fondazionefeltrinelli="cd ~/Dropbox/Projects/ensoul/feltrinelli/fondazionefeltrinelli.it"
-alias scuoladicittadinanzaeuropea="cd ~/Dropbox/Projects/ensoul/feltrinelli/scuoladicittadinanzaeuropea.it"
+alias _feltrinelli-trellis="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/feltrinelli/_trellis-feltrinelli"
+alias fondazionefeltrinelli="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/feltrinelli/fondazionefeltrinelli.it"
+alias scuoladicittadinanzaeuropea="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/feltrinelli/scuoladicittadinanzaeuropea.it"
 
 # Davide Maule aliases
-alias _davidemaule-trellis="cd ~/Dropbox/Projects/ensoul/davidemaule/_trellis-davidemaule"
-alias davidemaule="cd ~/Dropbox/Projects/ensoul/davidemaule/davidemaule.com"
-alias davidemaule-minerva="cd ~/Dropbox/Projects/ensoul/davidemaule/minerva.davidemaule.com"
+alias _davidemaule-trellis="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/davidemaule/_trellis-davidemaule"
+alias davidemaule="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/davidemaule/davidemaule.com"
+alias davidemaule-minerva="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/davidemaule/minerva.davidemaule.com"
 
 # Other customers aliases
-alias ellegiti="cd ~/Dropbox/Projects/personal/ellegiti"
-alias remida="cd ~/Dropbox/Projects/personal/remida"
-alias keliakos="cd ~/Dropbox/Projects/personal/keliakos"
-alias chiarezzalavoro="cd ~/Dropbox/Projects/personal/chiarezzalavoro"
-alias immagine="cd ~/Dropbox/Projects/personal/immagine"
-
-# Personal aliases
-alias invoiceplane="cd ~/Dropbox/Projects/personal/invoiceplane"
+alias ellegiti="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/ellegiti"
+alias remida="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/remida"
+alias keliakos="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/keliakos"
+alias chiarezzalavoro="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/chiarezzalavoro"
+alias immagine="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/immagine"
