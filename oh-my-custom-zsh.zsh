@@ -167,7 +167,7 @@ abet-composer() {
   esac
 }
 alias _abet-trellis="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/_trellis-abetlaminati"
-alias _abet-decori="cd ~/Dropbox\ \(Ensoul\)/Ensoul\ Collaboration/Clienti\ \&\ Progetti/Abet\ Laminati/_file-decori-abetlaminati.com/"
+alias _abet-decori="cd ~/Dropbox\ \(Ensoul\)/Ensoul\ Collaboration/Clienti\ \&\ Progetti/Abet\ Laminati/_file-decori-abetlaminati"
 alias abet-main="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/abetlaminati.com"
 alias abet-au="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/au.abetlaminati.com"
 alias abet-be="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/be.abetlaminati.com"
