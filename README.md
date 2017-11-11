@@ -87,7 +87,6 @@ Custom Oh My Zsh folder and other utilities.
   * ack
   * guetzli
   * hub
-  * sudolikeaboss
   * dnsmasq
   * mas
   * tidy-html5
