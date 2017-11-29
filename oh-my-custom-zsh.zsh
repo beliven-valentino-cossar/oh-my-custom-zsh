@@ -50,19 +50,19 @@ cdwp() {
 }
 
 # Personal aliases
-alias invoiceplane="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/invoiceplane"
+alias invoiceplane="cd ~/Projects/invoiceplane"
 
 # Ensoul aliases
-alias slate="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/slate"
-alias rankz="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/testsage/testsage.dev/web/app/plugins/rankz"
-alias trellis-database-uploads-migration="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/trellis-database-uploads-migration"
-alias _testsage-trellis="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/testsage/_trellis-testsage"
-alias testsage="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/testsage/testsage.dev"
+alias slate="cd ~/Projects/slate"
+alias rankz="cd ~/Projects/testsage/testsage.dev/web/app/plugins/rankz"
+alias trellis-database-uploads-migration="cd ~/Projects/trellis-database-uploads-migration"
+alias _testsage-trellis="cd ~/Projects/testsage/_trellis-testsage"
+alias testsage="cd ~/Projects/testsage/testsage.dev"
 
 # Abet Laminati aliases and functions
 abet-open() {
   SELECT="bedrock"
-  PATH_SITE="~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/"
+  PATH_SITE="~/Projects/abetlaminati/"
   PATH_THEME="/web/app/themes/sage"
   SITE_NAME_NATIONAL=("au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
   SITE_NAME_ALL=("abetlaminati.com" "au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
@@ -133,7 +133,7 @@ abet-composer() {
     /usr/local/bin/composer install -d $1
   }
   SELECT=("update" "install")
-  PATH_SITE="$HOME/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/"
+  PATH_SITE="$HOME/Projects/abetlaminati/"
   SITE_NAME_NATIONAL=("au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
   SITE_NAME_ALL=("abetlaminati.com" "au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
   # Update composer to the latest version
@@ -167,36 +167,33 @@ abet-composer() {
     ;;
   esac
 }
-alias _abet-trellis="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/_trellis-abetlaminati"
-alias _abet-decori="cd ~/Dropbox\ \(Ensoul\)/Ensoul\ Collaboration/Clienti\ \&\ Progetti/Abet\ Laminati/_file-decori-abetlaminati"
-alias abet-main="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/abetlaminati.com"
-alias abet-au="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/au.abetlaminati.com"
-alias abet-be="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/be.abetlaminati.com"
-alias abet-ca="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/ca.abetlaminati.com"
-alias abet-ch="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/ch.abetlaminati.com"
-alias abet-cn="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/cn.abetlaminati.com"
-alias abet-de="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/de.abetlaminati.com"
-alias abet-es="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/es.abetlaminati.com"
-alias abet-fr="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/fr.abetlaminati.com"
-alias abet-nl="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/nl.abetlaminati.com"
-alias abet-pl="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/pl.abetlaminati.com"
-alias abet-ru="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/ru.abetlaminati.com"
-alias abet-uk="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/uk.abetlaminati.com"
-alias abet-us="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/abetlaminati/us.abetlaminati.com"
+alias _abet-file="cd ~/Projects/abetlaminati/_file-abetlaminati"
+alias _abet-trellis="cd ~/Projects/abetlaminati/_trellis-abetlaminati"
+alias abet-main="cd ~/Projects/abetlaminati/abetlaminati.com"
+alias abet-au="cd ~/Projects/abetlaminati/au.abetlaminati.com"
+alias abet-be="cd ~/Projects/abetlaminati/be.abetlaminati.com"
+alias abet-ca="cd ~/Projects/abetlaminati/ca.abetlaminati.com"
+alias abet-ch="cd ~/Projects/abetlaminati/ch.abetlaminati.com"
+alias abet-cn="cd ~/Projects/abetlaminati/cn.abetlaminati.com"
+alias abet-de="cd ~/Projects/abetlaminati/de.abetlaminati.com"
+alias abet-es="cd ~/Projects/abetlaminati/es.abetlaminati.com"
+alias abet-fr="cd ~/Projects/abetlaminati/fr.abetlaminati.com"
+alias abet-nl="cd ~/Projects/abetlaminati/nl.abetlaminati.com"
+alias abet-pl="cd ~/Projects/abetlaminati/pl.abetlaminati.com"
+alias abet-ru="cd ~/Projects/abetlaminati/ru.abetlaminati.com"
+alias abet-uk="cd ~/Projects/abetlaminati/uk.abetlaminati.com"
+alias abet-us="cd ~/Projects/abetlaminati/us.abetlaminati.com"
 
 # Feltrinelli aliases
-alias _feltrinelli-trellis="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/feltrinelli/_trellis-feltrinelli"
-alias fondazionefeltrinelli="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/feltrinelli/fondazionefeltrinelli.it"
-alias scuoladicittadinanzaeuropea="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/feltrinelli/scuoladicittadinanzaeuropea.it"
+alias _feltrinelli-trellis="cd ~/Projects/feltrinelli/_trellis-feltrinelli"
+alias fondazionefeltrinelli="cd ~/Projects/feltrinelli/fondazionefeltrinelli.it"
+alias scuoladicittadinanzaeuropea="cd ~/Projects/feltrinelli/scuoladicittadinanzaeuropea.it"
 
 # Davide Maule aliases
-alias _davidemaule-trellis="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/davidemaule/_trellis-davidemaule"
-alias davidemaule="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/davidemaule/davidemaule.com"
-alias davidemaule-minerva="cd ~/Dropbox\ \(Ensoul\)/Projects/ensoul/davidemaule/minerva.davidemaule.com"
+alias _davidemaule-trellis="cd ~/Projects/davidemaule/_trellis-davidemaule"
+alias davidemaule="cd ~/Projects/davidemaule/davidemaule.com"
+alias davidemaule-minerva="cd ~/Projects/davidemaule/minerva.davidemaule.com"
 
 # Other customers aliases
-alias ellegiti="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/ellegiti"
-alias remida="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/remida"
-alias keliakos="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/keliakos"
-alias chiarezzalavoro="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/chiarezzalavoro"
-alias immagine="cd ~/Dropbox\ \(Ensoul\)/Projects/personal/immagine"
+alias ellegiti="cd ~/Dropbox\ \(Ensoul\)/Projects/ellegiti.it"
+alias remida="cd ~/Dropbox\ \(Ensoul\)/Projects/gioielliremida.it"
