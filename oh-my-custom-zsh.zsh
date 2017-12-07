@@ -42,6 +42,9 @@ alias vass="vagrant ssh"
 alias vabu="vagrant box update"
 
 # Themes folder functions
+provision() {
+  ansible-playbook server.yml -e env=$1
+}
 cdbed() {
   cd web/app/themes/$1
 }
