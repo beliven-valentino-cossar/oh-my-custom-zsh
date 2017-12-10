@@ -192,11 +192,6 @@ alias _feltrinelli-trellis="cd ~/Projects/feltrinelli/_trellis-feltrinelli"
 alias fondazionefeltrinelli="cd ~/Projects/feltrinelli/fondazionefeltrinelli.it"
 alias scuoladicittadinanzaeuropea="cd ~/Projects/feltrinelli/scuoladicittadinanzaeuropea.it"
 
-# Davide Maule aliases
-alias _davidemaule-trellis="cd ~/Projects/davidemaule/_trellis-davidemaule"
-alias davidemaule="cd ~/Projects/davidemaule/davidemaule.com"
-alias davidemaule-minerva="cd ~/Projects/davidemaule/minerva.davidemaule.com"
-
 # Other customers aliases
 alias ellegiti="cd ~/Dropbox\ \(Ensoul\)/Projects/ellegiti.it"
 alias remida="cd ~/Dropbox\ \(Ensoul\)/Projects/gioielliremida.it"
