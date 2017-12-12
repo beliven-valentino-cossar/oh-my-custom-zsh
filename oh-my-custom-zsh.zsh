@@ -57,10 +57,10 @@ alias invoiceplane="cd ~/Projects/invoiceplane"
 
 # Ensoul aliases
 alias slate="cd ~/Projects/slate"
-alias rankz="cd ~/Projects/testsage/testsage.dev/web/app/plugins/rankz"
+alias rankz="cd ~/Projects/test/test.test/web/app/plugins/rankz"
 alias trellis-database-uploads-migration="cd ~/Projects/trellis-database-uploads-migration"
-alias _testsage-trellis="cd ~/Projects/testsage/_trellis-testsage"
-alias testsage="cd ~/Projects/testsage/testsage.dev"
+alias _test-trellis="cd ~/Projects/test/_trellis-test"
+alias test-bedrock="cd ~/Projects/test/test.test"
 
 # Abet Laminati aliases and functions
 abet-open() {
