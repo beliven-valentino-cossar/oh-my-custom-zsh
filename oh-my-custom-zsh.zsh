@@ -41,7 +41,7 @@ alias vaup="vagrant up --provision"
 alias vass="vagrant ssh"
 alias vabu="vagrant box update"
 
-# Themes folder functions
+# Trellis, Bedrock & Sage aliases and functions
 provision() {
   ansible-playbook server.yml -e env=$1
 }
@@ -51,6 +51,9 @@ cdbed() {
 cdwp() {
   cd wp-content/themes/$1
 }
+
+# General aliases
+alias projects="cd ~/Projects"
 
 # Personal aliases
 alias invoiceplane="cd ~/Projects/invoiceplane"
