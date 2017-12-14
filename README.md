@@ -13,7 +13,7 @@ Custom Oh My Zsh folder and other utilities.
 
   * [Xcode](https://developer.apple.com/xcode) - recommended install from Mac App Store
   * [Command Line Tools](https://developer.apple.com/xcode/features) - recommended install with `xcode-select --install`
-  * [Homebrew](https://brew.sh/index_it.html) - recommended install with from website
+  * [Homebrew](https://brew.sh/index_it.html) - recommended install from website
   * [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - recommended install with curl
   * [Mackup](https://github.com/lra/mackup) - recommended install with brew
   * [NVM](https://github.com/creationix/nvm) - recommended install with brew

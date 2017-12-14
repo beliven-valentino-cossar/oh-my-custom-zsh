@@ -53,7 +53,8 @@ cdwp() {
 }
 
 # General aliases
-alias projects="cd ~/Projects"
+alias proj="cd ~/Projects"
+alias dropproj="cd ~/Dropbox\ \(Ensoul\)/Projects"
 
 # Personal aliases
 alias invoiceplane="cd ~/Projects/invoiceplane"
