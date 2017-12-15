@@ -29,9 +29,6 @@ alias cleandropboxconflict="find ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflit
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias customohmyzsh="cd ~/.oh-my-custom-zsh"
 
-# MAMP
-alias vhosts="st ~/Dropbox\ \(Ensoul\)/Apps/MAMP/conf/apache/extra/httpd-vhosts.conf"
-
 # Vagrant
 alias vau="vagrant up"
 alias vah="vagrant halt"
@@ -57,9 +54,10 @@ alias proj="cd ~/Projects"
 alias dropproj="cd ~/Dropbox\ \(Ensoul\)/Projects"
 
 # Personal aliases
-alias invoiceplane="cd ~/Projects/invoiceplane"
+alias invoiceplane="cd ~/Projects/invoiceplane/app/invoiceplane"
 
 # Ensoul aliases
+alias ensoul="cd ~/Projects/ensoul.it/app/ensoul.it"
 alias slate="cd ~/Projects/slate"
 alias rankz="cd ~/Projects/test/test.test/web/app/plugins/rankz"
 alias trellis-database-uploads-migration="cd ~/Projects/trellis-database-uploads-migration"
@@ -197,5 +195,5 @@ alias fondazionefeltrinelli="cd ~/Projects/feltrinelli/fondazionefeltrinelli.it"
 alias scuoladicittadinanzaeuropea="cd ~/Projects/feltrinelli/scuoladicittadinanzaeuropea.it"
 
 # Other customers aliases
-alias ellegiti="cd ~/Dropbox\ \(Ensoul\)/Projects/ellegiti.it"
-alias remida="cd ~/Dropbox\ \(Ensoul\)/Projects/gioielliremida.it"
+alias ellegiti="cd ~/Dropbox\ \(Ensoul\)/Projects/ellegiti.it/app/public"
+alias remida="cd ~/Dropbox\ \(Ensoul\)/Projects/gioielliremida.it/app/public"

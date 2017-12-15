@@ -29,7 +29,7 @@ Custom Oh My Zsh folder and other utilities.
   * [Yarn](https://yarnpkg.com) - recommended install with npm
   * [Vagrant](https://www.vagrantup.com) - recommended install from website
   * [PHPCS and PHPCBF](https://github.com/squizlabs/PHP_CodeSniffer) - recommended install from website
-  * [MAMP](https://www.mamp.info) - recommended install from website
+  * [Local](https://local.getflywheel.com) - recommended install from website
 
 ### Basic Installation
 
