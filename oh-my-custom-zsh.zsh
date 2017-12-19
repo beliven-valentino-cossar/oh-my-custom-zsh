@@ -19,11 +19,16 @@ alias grep="grep --color=auto"
 alias rmds="find . -name '*.DS_Store' -type f -delete"
 alias hosts="st /etc/hosts"
 alias exports="st /etc/exports"
-alias known_hosts="st ~/.ssh/known_hosts"
+alias knownhosts="st ~/.ssh/known_hosts"
 alias resetls="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -seed -r -f -v -domain local -domain user -domain system"
 alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;"
-alias printdropboxconflict="find ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -print"
-alias cleandropboxconflict="find ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -exec rm -f {} \;"
+alias lsdropbox="find ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -print"
+alias cldropbox="find ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -exec rm -f {} \;"
+
+# ssh-agent
+alias lsssh="ssh-add -L"
+alias clssh="ssh-add -D"
+alias adssh="ssh-add -K ~/.ssh/id_rsa"
 
 # Oh My Zsh and Oh My Custom Zsh
 alias ohmyzsh="cd ~/.oh-my-zsh"
