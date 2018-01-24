@@ -43,7 +43,9 @@ alias vaup="vagrant up --provision"
 alias vass="vagrant ssh"
 alias vabu="vagrant box update"
 
-# Trellis, Bedrock & Sage aliases and functions
+# General aliases and functions
+alias proj="cd ~/Projects"
+alias dropproj="cd ~/Dropbox\ \(Ensoul\)/Projects"
 provision() {
   ansible-playbook server.yml -e env=$1
 }
@@ -53,10 +55,29 @@ cdbed() {
 cdwp() {
   cd wp-content/themes/$1
 }
-
-# General aliases
-alias proj="cd ~/Projects"
-alias dropproj="cd ~/Dropbox\ \(Ensoul\)/Projects"
+avm() {
+  ACV=$(pip show ansible | grep Version | cut -d\  -f2)
+  ANV=$1
+  if [[ ! $ANV =~ ^([0-9]\.[0-9]\.[0-9]\.[0-9])$ ]]; then
+    tput setaf 1; echo "Incorrect entry '$ANV' (version scheme with four digits)"
+    return
+  fi;
+  if [ "$ACV" == "$ANV" ]; then
+    tput setaf 1; echo "Version already installed (ansible-$ANV)"
+    return
+  fi;
+  if [ "$ACV" != "" ]; then
+    echo "Attempt to uninstall ansible-$ACV"
+    pip uninstall -q -y ansible
+    wait
+    echo "Successfully uninstalled ansible-$ACV"
+  fi;
+  echo "Installing ansible-$ANV"
+  pip install -q ansible==$ANV
+  if [ $? -eq 0 ]; then
+    echo "Successfully installed ansible-$ANV"
+  fi;
+}
 
 # Personal aliases
 alias invoiceplane="cd ~/Projects/invoiceplane/app/invoiceplane"
