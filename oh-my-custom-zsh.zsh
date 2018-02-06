@@ -17,9 +17,9 @@ alias cp="${aliases[cp]:-cp} -vi"
 alias mv="${aliases[mv]:-mv} -vi"
 alias grep="grep --color=auto"
 alias rmds="find . -name '*.DS_Store' -type f -delete"
-alias hosts="st /etc/hosts"
-alias exports="st /etc/exports"
-alias knownhosts="st ~/.ssh/known_hosts"
+alias hosts="vsa /etc/hosts"
+alias exports="vsa /etc/exports"
+alias knownhosts="vsa ~/.ssh/known_hosts"
 alias resetls="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -seed -r -f -v -domain local -domain user -domain system"
 alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;"
 alias lsdropbox="find ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -print"
@@ -93,41 +93,6 @@ alias _roots-trellis="cd ~/Projects/roots/_trellis-roots"
 alias roots="cd ~/Projects/roots/roots.ensoul.works"
 
 # Abet Laminati aliases and functions
-abet-open() {
-  SELECT="bedrock"
-  PATH_SITE="~/Projects/abetlaminati/"
-  PATH_THEME="/web/app/themes/sage"
-  SITE_NAME_NATIONAL=("au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
-  SITE_NAME_ALL=("abetlaminati.com" "au.abetlaminati.com" "be.abetlaminati.com" "ca.abetlaminati.com" "ch.abetlaminati.com" "cn.abetlaminati.com" "de.abetlaminati.com" "es.abetlaminati.com" "fr.abetlaminati.com" "nl.abetlaminati.com" "pl.abetlaminati.com" "ru.abetlaminati.com" "uk.abetlaminati.com" "us.abetlaminati.com")
-  case $1 in
-    national)
-      if [ ! -z "$2" ] && [ $2 == $SELECT ]; then
-        for A in ${SITE_NAME_NATIONAL[@]}; do
-          # Open Bedrock folder in the current Sublime Text window
-          st $PATH_SITE$A
-        done
-      else
-        for A in ${SITE_NAME_NATIONAL[@]}; do
-          # Open Sage folder in the current Sublime Text window
-          st $PATH_SITE$A$PATH_THEME
-        done
-      fi
-    ;;
-    *)
-      if [ ! -z "$2" ] && [ $2 == $SELECT ]; then
-        for A in ${SITE_NAME_ALL[@]}; do
-          # Open Bedrock folder in the current Sublime Text window
-          st $PATH_SITE$A
-        done
-      else
-        for A in ${SITE_NAME_ALL[@]}; do
-          # Open Sage folder in the current Sublime Text window
-          st $PATH_SITE$A$PATH_THEME
-        done
-      fi
-    ;;
-  esac
-}
 abet-composer() {
   composer-install() {
     COMPOSER_CACHE_PATH="$HOME/.composer/cache"
