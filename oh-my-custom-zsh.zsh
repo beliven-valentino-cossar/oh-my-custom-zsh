@@ -87,11 +87,13 @@ alias invoiceplane="cd ~/Projects/invoiceplane/app/invoiceplane"
 alias ensoul="cd ~/Projects/ensoul.it/app/ensoul.it"
 alias slate="cd ~/Projects/slate"
 alias trellis-database-uploads-migration="cd ~/Projects/trellis-database-uploads-migration"
-alias rankz="cd ~/Projects/roots/roots.ensoul.works/web/app/plugins/rankz"
+alias rankz="cd ~/Projects/rankz"
+alias _roots-ensoul-trellis="cd ~/Projects/roots-ensoul/_trellis-roots-ensoul"
+alias roots-ensoul="cd ~/Projects/roots-ensoul/roots.ensoul.works"
 
 # Roots aliases
-alias _roots-trellis="cd ~/Projects/roots/_trellis-roots"
-alias roots="cd ~/Projects/roots/roots.ensoul.works"
+alias _roots-trellis="cd ~/Projects/roots/trellis"
+alias roots="cd ~/Projects/roots"
 
 # Abet Laminati aliases and functions
 abet-composer() {
