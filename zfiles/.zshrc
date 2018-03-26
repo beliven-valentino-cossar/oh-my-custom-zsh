@@ -51,7 +51,26 @@ ZSH_CUSTOM=~/.oh-my-custom-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(battery bower colored-man-pages composer dirhistory gem git gulp npm nvm osx vagrant vscode yarn z zsh-autosuggestions zsh-syntax-highlighting zsh_reload)
+plugins=(
+  battery
+  bower
+  colored-man-pages
+  composer
+  dirhistory
+  gem
+  git
+  gulp
+  npm
+  nvm
+  osx
+  vagrant
+  vscode
+  yarn
+  z
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  zsh_reload
+)
 
 source $ZSH/oh-my-zsh.sh
 
