@@ -13,8 +13,8 @@ eval "$(rbenv init -)"
 
 # PHP
 # Load Homebrew PHP stable into the shell session
-export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+#export PATH="$(brew --prefix php72)/bin:$PATH"
 
-# Python 2.x
-# Load Homebrew Python 2.x into the shell session
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# Python@2
+# Load Homebrew Python@2 into the shell session
+#export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
