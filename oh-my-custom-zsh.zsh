@@ -189,6 +189,10 @@ alias abet-ru="cd ~/Projects/abetlaminati/ru.abetlaminati.com"
 alias abet-uk="cd ~/Projects/abetlaminati/uk.abetlaminati.com"
 alias abet-us="cd ~/Projects/abetlaminati/us.abetlaminati.com"
 
+# Diplos aliases
+alias _diplos-trellis="cd ~/Projects/diplos/_trellis-diplos"
+alias diplos="cd ~/Projects/diplos/diplosdesign.com"
+
 # Feltrinelli aliases
 alias _feltrinelli-trellis="cd ~/Projects/feltrinelli/_trellis-feltrinelli"
 alias fondazionefeltrinelli="cd ~/Projects/feltrinelli/fondazionefeltrinelli.it"
