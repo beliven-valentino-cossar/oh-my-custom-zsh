@@ -44,6 +44,9 @@ alias vaup="vagrant up --provision"
 alias vass="vagrant ssh"
 alias vabu="vagrant box update"
 
+# Visual Studio Code
+alias vsls="code --list-extensions"
+
 # General aliases and functions
 alias proj="cd ~/Projects"
 alias dropproj="cd ~/Dropbox\ \(Ensoul\)/Projects"
