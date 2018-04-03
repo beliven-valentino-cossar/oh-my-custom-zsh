@@ -53,11 +53,20 @@ alias dropproj="cd ~/Dropbox\ \(Ensoul\)/Projects"
 provision() {
   ansible-playbook server.yml -e env=$1
 }
-cdbed() {
-  cd web/app/themes/$1
-}
-cdwp() {
-  cd wp-content/themes/$1
+cdth() {
+  if [ -d "site/web/app/themes/$1" ]; then
+    cd site/web/app/themes/$1
+    return
+  fi
+  if [ -d "web/app/themes/$1" ]; then
+    cd web/app/themes/$1
+    return
+  fi
+  if [ -d "wp-content/themes/$1" ]; then
+    cd wp-content/themes/$1
+    return
+  fi
+  echo "Theme folder doesn't exist!"
 }
 avm() {
   ACV=$(pip show ansible | grep Version | cut -d\  -f2)
