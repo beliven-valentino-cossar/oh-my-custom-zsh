@@ -54,6 +54,10 @@ provision() {
   ansible-playbook server.yml -e env=$1
 }
 cdth() {
+  if [ -d "../site/web/app/themes/$1" ]; then
+    cd ../site/web/app/themes/$1
+    return
+  fi
   if [ -d "site/web/app/themes/$1" ]; then
     cd site/web/app/themes/$1
     return
