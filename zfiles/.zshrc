@@ -104,7 +104,8 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Spaceship theme settings
-SPACESHIP_CHAR_SYMBOL="→ "
+SPACESHIP_CHAR_SYMBOL="→"
+SPACESHIP_CHAR_SUFFIX=" "
 SPACESHIP_DIR_TRUNC=6
 SPACESHIP_PACKAGE_SYMBOL="❒ "
 SPACESHIP_RUBY_SYMBOL="✦ "
