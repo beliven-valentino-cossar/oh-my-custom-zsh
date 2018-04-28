@@ -101,7 +101,7 @@ avm() {
 }
 
 # Personal aliases
-alias invoiceplane="cd ~/Projects/invoiceplane/app/invoiceplane"
+alias billing="cd ~/Projects/billing.valentinocossar.com/app/invoiceplane"
 
 # Ensoul aliases
 alias ensoul="cd ~/Projects/ensoul.it/app/ensoul.it"
