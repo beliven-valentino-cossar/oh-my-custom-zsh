@@ -75,12 +75,13 @@ cdth() {
 avm() {
   ACV=$(pip show ansible | grep Version | cut -d\  -f2)
   ANV=$1
+  ANV_REGEX="^([0-9]\.[0-9]\.[0-9])"
   if [ "$ANV" == "" -o "$ANV" == "-v" -o "$ANV" == "-V" -o "$ANV" == "--version" -o "$ANV" == "v" -o "$ANV" == "V" -o "$ANV" == "version" ]; then
     echo "Ansible current version: $ACV"
     return
   fi;
-  if [[ ! $ANV =~ ^([0-9]\.[0-9]\.[0-9]\.[0-9])$ ]]; then
-    tput setaf 1; echo "Incorrect entry '$ANV' (version scheme with four digits)"
+  if [[ ! $ANV =~ $ANV_REGEX ]]; then
+    tput setaf 1; echo "Incorrect entry '$ANV' (semantic versioning with three (>= 2.5.0) or four (< 2.5.0) digits)"
     return
   fi;
   if [ "$ACV" == "$ANV" ]; then
