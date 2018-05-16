@@ -22,8 +22,8 @@ alias exports="vsa /etc/exports"
 alias knownhosts="vsa ~/.ssh/known_hosts"
 alias resetls="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -seed -r -f -v -domain local -domain user -domain system"
 alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;"
-alias lsdropbox="find ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -print"
-alias cldropbox="find ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -exec rm -f {} \;"
+alias lsdropbox="find ~/Dropbox\ \(Personale\) ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -print"
+alias cldropbox="find ~/Dropbox\ \(Personale\) ~/Dropbox\ \(Ensoul\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -exec rm -f {} \;"
 
 # ssh-agent
 alias lsssh="ssh-add -L"
@@ -49,7 +49,7 @@ alias vsls="code --list-extensions"
 
 # General aliases and functions
 alias proj="cd ~/Projects"
-alias dropproj="cd ~/Dropbox\ \(Ensoul\)/Projects"
+alias dropproj="cd ~/Dropbox\ \(Personale\)/Projects"
 provision() {
   ansible-playbook server.yml -e env=$1
 }
@@ -216,5 +216,5 @@ alias fondazionefeltrinelli="cd ~/Projects/feltrinelli/fondazionefeltrinelli.it"
 alias scuoladicittadinanzaeuropea="cd ~/Projects/feltrinelli/scuoladicittadinanzaeuropea.it"
 
 # Other customers aliases
-alias ellegiti="cd ~/Dropbox\ \(Ensoul\)/Projects/ellegiti.it/app/public"
-alias remida="cd ~/Dropbox\ \(Ensoul\)/Projects/gioielliremida.it/app/public"
+alias ellegiti="cd ~/Dropbox\ \(Personale\)/Projects/ellegiti.it/app/public"
+alias remida="cd ~/Dropbox\ \(Personale\)/Projects/gioielliremida.it/app/public"
