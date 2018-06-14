@@ -13,3 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 # To install a new version of Ruby with rbenv, use this: rbenv install 2.4.0
 # To set a default Ruby version to be used in any new shell, use this: rbenv global 2.4.0
 eval "$(rbenv init -)"
+
+# The Fuck
+# Configure alias for The Fuck
+eval $(thefuck --alias)
