@@ -53,7 +53,7 @@ alias dropproj="cd ~/Dropbox\ \(Personale\)/Projects"
 provision() {
   ansible-playbook server.yml -e env=$1
 }
-cdth() {
+theme() {
   if [ -d "../site/web/app/themes/$1" ]; then
     cd ../site/web/app/themes/$1
     return
