@@ -65,6 +65,7 @@ plugins=(
   osx
   vagrant
   vscode
+  wp-cli
   yarn
   z
   zsh-autosuggestions
