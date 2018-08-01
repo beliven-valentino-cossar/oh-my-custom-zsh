@@ -207,16 +207,19 @@ alias abet-ru="cd ~/Projects/abetlaminati/ru.abetlaminati.com"
 alias abet-uk="cd ~/Projects/abetlaminati/uk.abetlaminati.com"
 alias abet-us="cd ~/Projects/abetlaminati/us.abetlaminati.com"
 
-# Diplos aliases
-alias diplos="cd ~/Projects/diplosdesign.com"
-
 # BAM aliases
 alias bam="cd ~/Projects/bam.milano.it"
+
+# Diplos aliases
+alias diplos="cd ~/Projects/diplosdesign.com"
 
 # Feltrinelli aliases
 alias _feltrinelli-trellis="cd ~/Projects/feltrinelli/_trellis-feltrinelli"
 alias fondazionefeltrinelli="cd ~/Projects/feltrinelli/fondazionefeltrinelli.it"
 alias scuoladicittadinanzaeuropea="cd ~/Projects/feltrinelli/scuoladicittadinanzaeuropea.it"
+
+# La Cividina aliases
+alias cividina="cd ~/Projects/lacividina.com"
 
 # Other customers aliases
 alias ellegiti="cd ~/Dropbox\ \(Personale\)/Projects/ellegiti.it/app/public"
