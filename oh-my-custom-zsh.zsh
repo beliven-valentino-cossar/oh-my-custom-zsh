@@ -49,7 +49,6 @@ alias vsls="code --list-extensions"
 
 # General aliases and functions
 alias proj="cd ~/Projects"
-alias dropproj="cd ~/Dropbox\ \(Personale\)/Projects"
 provision() {
   ansible-playbook server.yml -e env=$1
 }
@@ -222,5 +221,5 @@ alias scuoladicittadinanzaeuropea="cd ~/Projects/feltrinelli/scuoladicittadinanz
 alias cividina="cd ~/Projects/lacividina.com"
 
 # Other customers aliases
-alias ellegiti="cd ~/Dropbox\ \(Personale\)/Projects/ellegiti.it/app/public"
-alias remida="cd ~/Dropbox\ \(Personale\)/Projects/gioielliremida.it/app/public"
+alias ellegiti="cd ~/Projects/ellegiti.it/app/public"
+alias remida="cd ~/Projects/gioielliremida.it/app/public"
