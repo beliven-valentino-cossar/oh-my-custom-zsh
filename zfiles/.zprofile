@@ -4,7 +4,6 @@ export PATH="/usr/local/sbin:$PATH"
 # NVM
 # Load Homebrew NVM into the shell session
 # To install a new version of Node.js with nvm, use this: nvm install lts/carbon
-# To set a default Node version to be used in any new shell, use this: nvm alias default lts/carbon
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
