@@ -11,7 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 # Load Homebrew rbenv into the shell session
 # To install a new version of Ruby with rbenv, use this: rbenv install 2.4.0
 # To set a default Ruby version to be used in any new shell, use this: rbenv global 2.4.0
-eval "$(rbenv init -)"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # The Fuck
 # Configure alias for The Fuck
