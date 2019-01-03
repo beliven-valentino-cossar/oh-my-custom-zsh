@@ -105,6 +105,9 @@ avm() {
   fi;
 }
 
+# Example project alias
+alias example="cd ~/Projects/example.com"
+
 # Personal aliases
 alias trellis-database-uploads-migration="cd ~/Projects/trellis-database-uploads-migration"
 
@@ -112,8 +115,9 @@ alias trellis-database-uploads-migration="cd ~/Projects/trellis-database-uploads
 alias _roots-trellis="cd ~/Projects/roots/trellis"
 alias roots="cd ~/Projects/roots"
 
-# Example project alias
-alias example="cd ~/Projects/example.com"
+# Unidea & customers aliases
+alias rankz="cd ~/Projects/wordpress-plugins/rankz"
+alias designcontest="cd ~/Projects/designcontest.cristalplant.it"
 
 # Other customers aliases
 alias ellegiti="cd ~/Projects/ellegiti.it/app/public"
