@@ -72,7 +72,7 @@ Custom Oh My Zsh folder and other utilities.
 
 ### Custom plugins
 
-  * [sublime](https://github.com/valentinocossar/sublime)
+  * [vscode](https://github.com/valentinocossar/vscode)
   * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
   * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
