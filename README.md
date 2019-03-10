@@ -20,14 +20,13 @@ Custom Oh My Zsh folder and other utilities.
   * [rbenv](https://github.com/rbenv/rbenv) - recommended install with brew
   * [PHP](https://php-osx.liip.ch) - recommended install with brew
   * [Python](https://www.python.org) - recommended install with brew
-  * [passlib](https://pypi.python.org/pypi/passlib) - recommended install with `pip install passlib`
   * [Ansible](https://www.ansible.com) - recommended install with `pip install ansible==2.0.2.0`
   * [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with brew
-  * [Composer](https://getcomposer.org) - recommended install from website
+  * [Composer](https://getcomposer.org) - recommended install with brew
   * [Gulp](http://gulpjs.com) - recommended install with npm
   * [Bower](https://bower.io) - recommended install with npm
   * [Yarn](https://yarnpkg.com) - recommended install with npm
-  * [Vagrant](https://www.vagrantup.com) - recommended install from website
+  * [Vagrant](https://www.vagrantup.com) - recommended install with brew cask
   * [Local](https://local.getflywheel.com) - recommended install from website
 
 ### Basic Installation
