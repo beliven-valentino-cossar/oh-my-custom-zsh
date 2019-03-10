@@ -82,14 +82,13 @@ Custom Oh My Zsh folder and other utilities.
 
 ## Other Homebrew formulas
 
-  * ack
   * guetzli
-  * hub
   * dnsmasq
   * mas
-  * tidy-html5
   * tree
   * wget
+  * wp-cli
+  * wpscan
 
 ## Authors
 
