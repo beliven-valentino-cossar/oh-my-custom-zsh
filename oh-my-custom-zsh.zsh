@@ -4,7 +4,7 @@
 # For further help: pwgen -h
 pwlen() {
   if [[ $2 == "char" ]]; then
-    pwgen -Bcnsvy $1 1 | tr -d "\n" | pbcopy;
+    pwgen -Bcnsvy -r \<\>\=\+\'\"\?\^\(\)\`\:\~\;\:\[\]\{\}\.\,\\\/\| $1 1 | tr -d "\n" | pbcopy;
   else
     pwgen -Bcnsv $1 1 | tr -d "\n" | pbcopy;
   fi;
