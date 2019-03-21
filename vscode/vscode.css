@@ -22,7 +22,7 @@
 /*
   This changes font-family in all VS Code
 */
-.monaco-shell, .mtk1 {
+.monaco-shell, .mtk1, .mac {
   font-family: "Fira Code", "Inconsolata", monospace !important;
 }
 
