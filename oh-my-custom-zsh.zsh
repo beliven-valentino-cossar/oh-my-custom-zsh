@@ -117,6 +117,7 @@ alias roots="cd ~/Projects/roots"
 
 # Unidea & customers aliases
 alias rankz="cd ~/Projects/wordpress-plugins/rankz"
+alias bedrock-lando-shipit="cd ~/Projects/bedrock-lando-shipit"
 alias designcontest="cd ~/Projects/designcontest.cristalplant.it"
 
 # Other customers aliases
