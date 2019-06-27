@@ -52,11 +52,12 @@ catplist() {
   plutil -convert xml1 -o - $1
 }
 
-# General aliases and functions
-alias proj="cd ~/Projects"
+# Simplify Trellis provision command
 provision() {
   ansible-playbook server.yml -e env=$1
 }
+
+# Quick jump into WordPress theme folder
 theme() {
   if [ -d "../site/web/app/themes/$1" ]; then
     cd ../site/web/app/themes/$1
@@ -76,6 +77,8 @@ theme() {
   fi
   echo "Theme folder doesn't exist!"
 }
+
+# Quick change Ansible installed version
 avm() {
   ACV=$(pip show ansible | grep Version | cut -d\  -f2)
   ANV=$1
@@ -105,8 +108,18 @@ avm() {
   fi;
 }
 
-# Example project alias
-alias example="cd ~/Projects/example.com"
+# Simplify Roots Sync Script command with Lando
+lsync() {
+  if [ -f "scripts/sync.sh" ]; then
+    lando ssh -c "cd scripts && ./sync.sh $1 $2 --local"
+  fi;
+  if [ -f "sync.sh" ]; then
+    lando ssh -c "./sync.sh $1 $2 --local"
+  fi;
+}
+
+# Projects alias
+alias proj="cd ~/Projects"
 
 # Personal aliases
 alias trellis-database-uploads-migration="cd ~/Projects/trellis-database-uploads-migration"
@@ -123,3 +136,6 @@ alias designcontest="cd ~/Projects/designcontest.cristalplant.it"
 # Other customers aliases
 alias ellegiti="cd ~/Projects/ellegiti.it/app/public"
 alias remida="cd ~/Projects/gioielliremida.it/app/public"
+
+# Example project alias
+alias example="cd ~/Projects/example.com"
