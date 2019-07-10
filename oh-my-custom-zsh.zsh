@@ -132,6 +132,10 @@ alias roots="cd ~/Projects/roots"
 alias rankz="cd ~/Projects/wordpress-plugins/rankz"
 alias bedrock-lando-shipit="cd ~/Projects/bedrock-lando-shipit"
 alias designcontest="cd ~/Projects/designcontest.cristalplant.it"
+alias comet="cd ~/Projects/clustercomet.it/app/public/comet"
+alias cac="cd ~/Projects/cac.ca/app/public/cac"
+alias cividale="cd ~/Projects/gruppocividale.com/app/public/gruppo-cividale"
+alias zml="cd ~/Projects/zml.it/app/public/zml"
 
 # Other customers aliases
 alias ellegiti="cd ~/Projects/ellegiti.it/app/public"
