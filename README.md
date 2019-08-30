@@ -51,11 +51,10 @@ Custom Oh My Zsh folder and other utilities.
   ln -s $HOME/.oh-my-custom-zsh/zfiles/.zprofile $HOME/.zprofile
   ```
 
-  4. Create symbolic links of `.mackup.cfg` and `.mackup` into your $HOME folder.
+  4. Create symbolic link of `.mackup.cfg` into your $HOME folder.
 
   ```sh
   ln -s $HOME/.oh-my-custom-zsh/mackup/.mackup.cfg $HOME/.mackup.cfg
-  ln -s $HOME/.oh-my-custom-zsh/mackup/.mackup $HOME/.mackup
   ```
 
   5. Restore files with mackup.
