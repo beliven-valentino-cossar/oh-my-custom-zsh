@@ -53,11 +53,6 @@ catplist() {
   plutil -convert xml1 -o - $1
 }
 
-# Simplify Trellis provision command
-provision() {
-  ansible-playbook server.yml -e env=$1
-}
-
 # Quick jump into WordPress theme folder
 theme() {
   if [ -d "../site/web/app/themes/$1" ]; then
@@ -109,38 +104,17 @@ avm() {
   fi;
 }
 
-# Simplify Roots Sync Script command with Lando
-lsync() {
-  if [ -f "scripts/sync.sh" ]; then
-    lando ssh -c "cd scripts && ./sync.sh $1 $2 --local"
-  fi;
-  if [ -f "sync.sh" ]; then
-    lando ssh -c "./sync.sh $1 $2 --local"
-  fi;
-}
-
-# Projects alias
-alias proj="cd ~/Projects"
+# Workspace alias
+alias works="cd ~/Workspace"
 
 # Personal aliases
-alias trellis-database-uploads-migration="cd ~/Projects/trellis-database-uploads-migration"
-
-# Roots aliases
-alias _roots-trellis="cd ~/Projects/roots/trellis"
-alias roots="cd ~/Projects/roots"
-
-# Unidea & customers aliases
-alias rankz="cd ~/Projects/wordpress-plugins/rankz"
-alias bedrock-lando-shipit="cd ~/Projects/bedrock-lando-shipit"
-alias designcontest="cd ~/Projects/designcontest.cristalplant.it"
-alias comet="cd ~/Projects/clustercomet.it/app/public/comet"
-alias cac="cd ~/Projects/cac.ca/app/public/cac"
-alias cividale="cd ~/Projects/gruppocividale.com/app/public/gruppo-cividale"
-alias zml="cd ~/Projects/zml.it/app/public/zml"
+alias trellis-database-uploads-migration="cd ~/Workspace/trellis-database-uploads-migration"
+alias rankz="cd ~/Workspace/wordpress-plugins/rankz"
+alias bedrock-lando-shipit="cd ~/Workspace/bedrock-lando-shipit"
 
 # Other customers aliases
-alias ellegiti="cd ~/Projects/ellegiti.it/app/public"
-alias remida="cd ~/Projects/gioielliremida.it/app/public"
+alias ellegiti="cd ~/Workspace/ellegiti.it/app/public"
+alias remida="cd ~/Workspace/gioielliremida.it/app/public"
 
-# Example project alias
-alias example="cd ~/Projects/example.com"
+# Example workspace alias
+alias example="cd ~/Workspace/example.com"
