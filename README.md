@@ -17,14 +17,10 @@ Custom Oh My Zsh folder and other utilities.
   * [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - recommended install with curl
   * [Mackup](https://github.com/lra/mackup) - recommended install with brew
   * [NVM](https://github.com/creationix/nvm) - recommended install with brew
-  * [rbenv](https://github.com/rbenv/rbenv) - recommended install with brew
-  * [PHP](https://php-osx.liip.ch) - recommended install with brew
   * [Python](https://www.python.org) - recommended install with brew
   * [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with brew
-  * [Composer](https://getcomposer.org) - recommended install with brew
   * [Gulp](http://gulpjs.com) - recommended install with npm
   * [Yarn](https://yarnpkg.com) - recommended install with npm
-  * [Vagrant](https://www.vagrantup.com) - recommended install with brew cask
 
 ### Basic Installation
 
