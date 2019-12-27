@@ -20,14 +20,11 @@ Custom Oh My Zsh folder and other utilities.
   * [rbenv](https://github.com/rbenv/rbenv) - recommended install with brew
   * [PHP](https://php-osx.liip.ch) - recommended install with brew
   * [Python](https://www.python.org) - recommended install with brew
-  * [Ansible](https://www.ansible.com) - recommended install with `pip install ansible==2.0.2.0`
   * [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with brew
   * [Composer](https://getcomposer.org) - recommended install with brew
   * [Gulp](http://gulpjs.com) - recommended install with npm
-  * [Bower](https://bower.io) - recommended install with npm
   * [Yarn](https://yarnpkg.com) - recommended install with npm
   * [Vagrant](https://www.vagrantup.com) - recommended install with brew cask
-  * [Local](https://local.getflywheel.com) - recommended install from website
 
 ### Basic Installation
 
@@ -81,13 +78,19 @@ Custom Oh My Zsh folder and other utilities.
 
 ## Other Homebrew formulas
 
-  * guetzli
-  * dnsmasq
-  * mas
-  * tree
-  * wget
-  * wp-cli
-  * wpscan
+  * [ack](https://beyondgrep.com)
+  * [bat](https://github.com/sharkdp/bat)
+  * [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html)
+  * [helm](https://helm.sh)
+  * [helmfile](https://github.com/roboll/helmfile)
+  * [kubectx](https://github.com/ahmetb/kubectx)
+  * [mas](https://github.com/mas-cli/mas)
+  * [stern](https://github.com/wercker/stern)
+  * [thefuck](https://github.com/nvbn/thefuck)
+  * [tidy-html5](http://www.html-tidy.org)
+  * [tree](https://formulae.brew.sh/formula/tree)
+  * [watch](https://formulae.brew.sh/formula/watch)
+  * [wget](https://formulae.brew.sh/formula/wget)
 
 ## Authors
 
