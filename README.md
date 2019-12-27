@@ -81,6 +81,7 @@ Custom Oh My Zsh folder and other utilities.
   * [ack](https://beyondgrep.com)
   * [bat](https://github.com/sharkdp/bat)
   * [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html)
+  * [duti](https://github.com/moretension/duti)
   * [helm](https://helm.sh)
   * [helmfile](https://github.com/roboll/helmfile)
   * [kubectx](https://github.com/ahmetb/kubectx)
