@@ -88,7 +88,6 @@ Custom Oh My Zsh folder and other utilities.
   * [mas](https://github.com/mas-cli/mas)
   * [stern](https://github.com/wercker/stern)
   * [thefuck](https://github.com/nvbn/thefuck)
-  * [tidy-html5](http://www.html-tidy.org)
   * [tree](https://formulae.brew.sh/formula/tree)
   * [watch](https://formulae.brew.sh/formula/watch)
   * [wget](https://formulae.brew.sh/formula/wget)
