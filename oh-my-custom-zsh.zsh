@@ -20,7 +20,6 @@ alias rmds="find . -name '*.DS_Store' -type f -delete"
 alias hosts="vsa /etc/hosts"
 alias exports="vsa /etc/exports"
 alias knownhosts="vsa ~/.ssh/known_hosts"
-alias sshhosts="sed -n 's/Host //p' ~/.ssh/config"
 alias sshconfig="vsa ~/.ssh/config"
 alias resetls="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -seed -r -f -v -domain local -domain user -domain system"
 alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;"
@@ -48,6 +47,19 @@ alias vabu="vagrant box update"
 
 # Visual Studio Code
 alias vsls="code --list-extensions"
+
+# Print SSH config hosts alias
+sshhosts() {
+  green=$(tput setaf 2)
+  normal=$(tput sgr0)
+  hosts=( $(sed -n '/*/! s/Host //p' ~/.ssh/config) )
+  users=( $(sed -n 's/User //p' ~/.ssh/config) )
+  hostnames=( $(sed -n 's/Hostname //p' ~/.ssh/config) )
+  ports=( $(sed -n 's/Port //p' ~/.ssh/config) )
+  for ((i=1;i<=${#hosts[@]};++i)); do
+    printf "%s -> %s@%s:%s\n" "${green}${hosts[i]}${normal}" "${users[i]}" "${hostnames[i]}" "${ports[i]}"
+  done
+}
 
 # Print plist file to stdout (XML format)
 catplist() {
