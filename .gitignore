@@ -5,3 +5,6 @@ plugins/*
 # Themes
 themes/*
 !themes/.gitkeep
+
+# ENV
+.env
