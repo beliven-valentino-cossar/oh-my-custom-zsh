@@ -55,6 +55,10 @@ alias vsls="code --list-extensions"
 sshget() {
   SSH_CONFIG_PATH=~/.ssh/config
   CONTENT=$(curl -s --header "PRIVATE-TOKEN: $SSH_CONFIG_REPO_TOKEN" "https://gitlab.com/api/v4/projects/$SSH_CONFIG_REPO_ID/repository/files/config/raw?ref=master")
+  if [ ! -w "$SSH_CONFIG_PATH" ]; then
+    touch $SSH_CONFIG_PATH
+    chmod 600 $SSH_CONFIG_PATH
+  fi
   if [ ! -z "$CONTENT" ] && [ -w "$SSH_CONFIG_PATH" ]; then
     echo "$CONTENT" > "$SSH_CONFIG_PATH"
     echo "File ~/.ssh/config updated!"
