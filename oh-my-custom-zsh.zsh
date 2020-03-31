@@ -10,7 +10,7 @@ pwlen() {
     pwgen -Bcnsvy -r \<\>\=\+\'\"\?\^\(\)\`\:\~\;\:\[\]\{\}\.\,\\\/\| $1 1 | tr -d "\n" | pbcopy;
   else
     pwgen -Bcnsv $1 1 | tr -d "\n" | pbcopy;
-  fi;
+  fi
   echo -e "$(pbpaste)\nCopied to clipboard!"
 }
 
@@ -109,33 +109,45 @@ avm() {
   ACV=$(pip show ansible | grep Version | cut -d\  -f2)
   ANV=$1
   ANV_REGEX="^([0-9]\.[0-9]\.[0-9])"
-  if [ "$ANV" == "" -o "$ANV" == "-v" -o "$ANV" == "-V" -o "$ANV" == "--version" -o "$ANV" == "v" -o "$ANV" == "V" -o "$ANV" == "version" ]; then
+  if [ "$ANV" = "" -o "$ANV" = "-v" -o "$ANV" = "-V" -o "$ANV" = "--version" -o "$ANV" = "v" -o "$ANV" = "V" -o "$ANV" = "version" ]; then
     echo "Ansible current version: $ACV"
     return
-  fi;
+  fi
   if [[ ! $ANV =~ $ANV_REGEX ]]; then
     tput setaf 1; echo "Incorrect entry '$ANV' (semantic versioning with three (>= 2.5.0) or four (< 2.5.0) digits)"
     return
-  fi;
-  if [ "$ACV" == "$ANV" ]; then
+  fi
+  if [ "$ACV" = "$ANV" ]; then
     tput setaf 1; echo "Version already installed (ansible-$ANV)"
     return
-  fi;
+  fi
   if [ "$ACV" != "" ]; then
     echo "Attempt to uninstall ansible-$ACV"
     pip uninstall -q -y ansible
     wait
     echo "Successfully uninstalled ansible-$ACV"
-  fi;
+  fi
   echo "Installing ansible-$ANV"
   pip install -q ansible==$ANV
   if [ $? -eq 0 ]; then
     echo "Successfully installed ansible-$ANV"
-  fi;
+  fi
 }
 
-# Workspace alias
-alias works="cd ~/Workspace"
+# Change workspace
+works() {
+  PROJ=$1
+  if [ ! -d "$HOME/Workspace/$PROJ" ] && [ "$PROJ" != "" ]; then
+    echo "$HOME/Workspace/$PROJ is not a directory!"
+  else
+    if [ "$PROJ" = "" ]; then
+      cd $HOME/Workspace
+    else
+      cd $HOME/Workspace/$PROJ
+    fi
+  fi
+  return
+}
 
 # Personal aliases
 alias trellis-database-uploads-migration="cd ~/Workspace/trellis-database-uploads-migration"
