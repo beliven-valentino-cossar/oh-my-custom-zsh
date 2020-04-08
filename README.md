@@ -43,10 +43,11 @@ ln -s $HOME/.oh-my-custom-zsh/zfiles/.zshrc $HOME/.zshrc
 ln -s $HOME/.oh-my-custom-zsh/zfiles/.zprofile $HOME/.zprofile
 ```
 
-4. Create symbolic link of `.mackup.cfg` into your \$HOME folder.
+4. Create symbolic link of `.mackup.cfg` and `.mackup` into your \$HOME folder.
 
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/mackup/.mackup.cfg $HOME/.mackup.cfg
+ln -s $HOME/.oh-my-custom-zsh/mackup/.mackup $HOME/.mackup
 ```
 
 5. Restore files with mackup.
@@ -73,19 +74,22 @@ mackup restore
 
 ## Other Homebrew formulas
 
-- [ack](https://beyondgrep.com)
-- [bat](https://github.com/sharkdp/bat)
-- [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html)
-- [duti](https://github.com/moretension/duti)
-- [helm](https://helm.sh)
-- [helmfile](https://github.com/roboll/helmfile)
-- [kubectx](https://github.com/ahmetb/kubectx)
-- [mas](https://github.com/mas-cli/mas)
-- [stern](https://github.com/wercker/stern)
-- [thefuck](https://github.com/nvbn/thefuck)
-- [tree](https://formulae.brew.sh/formula/tree)
-- [watch](https://formulae.brew.sh/formula/watch)
-- [wget](https://formulae.brew.sh/formula/wget)
+- ack
+- bat
+- composer
+- dnsmasq
+- duti
+- gnupg
+- helmfile
+- hey
+- kubectx
+- mas
+- php-cs-fixer
+- stern
+- thefuck
+- tree
+- watch
+- wget
 
 ## Authors
 
