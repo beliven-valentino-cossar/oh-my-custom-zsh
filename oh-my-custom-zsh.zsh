@@ -149,6 +149,13 @@ works() {
   return
 }
 
+# Change workspace auto completion
+_works() {
+  DIRS=(`ls -d $HOME/Workspace/*/ | xargs -n 1 basename | tr '\n' ' '`)
+  compadd - $DIRS
+}
+compdef _works works
+
 # Personal aliases
 alias trellis-database-uploads-migration="cd ~/Workspace/trellis-database-uploads-migration"
 alias rankz="cd ~/Workspace/wordpress-plugins/rankz"
