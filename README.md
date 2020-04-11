@@ -84,6 +84,7 @@ mackup restore
 - hey
 - kubectx
 - mas
+- pgcli
 - php-cs-fixer
 - stern
 - thefuck
