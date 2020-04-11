@@ -152,7 +152,7 @@ works() {
 # Change workspace auto completion
 _works() {
   DIRS=(`ls -d $HOME/Workspace/*/ | xargs -n 1 basename | tr '\n' ' '`)
-  compadd - $DIRS
+  compadd -X 'Select a workspace:' $DIRS
 }
 compdef _works works
 
