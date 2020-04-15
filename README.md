@@ -82,6 +82,7 @@ mackup restore
 - gnupg
 - helmfile
 - hey
+- httpie
 - kubectx
 - mas
 - pgcli
