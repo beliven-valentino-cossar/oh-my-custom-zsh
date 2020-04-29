@@ -104,6 +104,16 @@ theme() {
   echo "Theme folder doesn't exist!"
 }
 
+# Roots Sync Script utility
+lsync() {
+  if [ -f "scripts/sync.sh" ]; then
+    lando ssh -c "cd scripts && ./sync.sh $1 $2 --local"
+  fi;
+  if [ -f "sync.sh" ]; then
+    lando ssh -c "./sync.sh $1 $2 --local"
+  fi;
+}
+
 # Quick change Ansible installed version
 avm() {
   ACV=$(pip show ansible | grep Version | cut -d\  -f2)
