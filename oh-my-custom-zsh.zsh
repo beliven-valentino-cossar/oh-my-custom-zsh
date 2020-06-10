@@ -53,60 +53,60 @@ alias vsls="code --list-extensions"
 
 # Get SSH config files from GitLab
 sshget() {
-  SSH_CONFIG_FILE=~/.ssh/config
-  GITLAB_CONFIG_FOLDER=config.heply.d
-  SSH_HEPLY_CONFIG_FOLDER=~/.ssh/config.heply.d
+  SSH_CONFIG_FOLDER_PATH=~/.ssh/$SSH_CONFIG_FOLDER
+  SSH_CONFIG_FILE_PATH=~/.ssh/config
 
-  if [ ! -w "$SSH_CONFIG_FILE" ]; then
-    touch $SSH_CONFIG_FILE
-    chmod 600 $SSH_CONFIG_FILE
-    echo -e "#\n# Include Heply config files\n#\nInclude config.heply.d/*" >> $SSH_CONFIG_FILE
-    echo "File $SSH_CONFIG_FILE created!"
-    echo "Add include for config folder in $SSH_CONFIG_FILE file!"
+  if [ ! -w "$SSH_CONFIG_FILE_PATH" ]; then
+    touch $SSH_CONFIG_FILE_PATH
+    chmod 600 $SSH_CONFIG_FILE_PATH
+    echo -e "#\n# Include config files\n#\nInclude $SSH_CONFIG_FOLDER/*" >> $SSH_CONFIG_FILE_PATH
+    echo "File $SSH_CONFIG_FILE_PATH created!"
+    echo "Add include for config folder in $SSH_CONFIG_FILE_PATH file!"
   fi
 
-  if ! grep -q "Include config.heply.d/*" "$SSH_CONFIG_FILE"; then
-    echo -e "\n#\n# Include Heply config files\n#\nInclude config.heply.d/*" >> $SSH_CONFIG_FILE
-    echo "Add include for config folder in $SSH_CONFIG_FILE file!"
+  if ! grep -q "Include $SSH_CONFIG_FOLDER/*" "$SSH_CONFIG_FILE_PATH"; then
+    echo -e "\n#\n# Include config files\n#\nInclude $SSH_CONFIG_FOLDER/*" >> $SSH_CONFIG_FILE_PATH
+    echo "Add include for config folder in $SSH_CONFIG_FILE_PATH file!"
   fi
 
-  if [[ ! -e $SSH_HEPLY_CONFIG_FOLDER ]]; then
-    mkdir $SSH_HEPLY_CONFIG_FOLDER
-    chmod 700 $SSH_HEPLY_CONFIG_FOLDER
-    echo "Folder $SSH_HEPLY_CONFIG_FOLDER created!"
+  if [[ ! -e $SSH_CONFIG_FOLDER_PATH ]]; then
+    mkdir $SSH_CONFIG_FOLDER_PATH
+    chmod 700 $SSH_CONFIG_FOLDER_PATH
+    echo "Folder $SSH_CONFIG_FOLDER_PATH created!"
   fi
 
-  LIST=$(curl -s --header "PRIVATE-TOKEN: $SSH_CONFIG_REPO_TOKEN" "https://gitlab.com/api/v4/projects/$SSH_CONFIG_REPO_ID/repository/tree?path=config.heply.d&ref=master")
+  LIST=$(curl -s --header "PRIVATE-TOKEN: $SSH_CONFIG_REPO_TOKEN" "https://gitlab.com/api/v4/projects/$SSH_CONFIG_REPO_ID/repository/tree?path=$SSH_CONFIG_FOLDER&ref=master")
   FILES=$(echo "$LIST" | tr ",{" "\n" | grep name | cut -d ':' -f 2 | sed -e 's/"//g' | paste -sd " " -)
   FILES=(`echo ${FILES}`)
   for i in "${FILES[@]}"; do
-    CONTENT=$(curl -s --header "PRIVATE-TOKEN: $SSH_CONFIG_REPO_TOKEN" "https://gitlab.com/api/v4/projects/$SSH_CONFIG_REPO_ID/repository/files/$GITLAB_CONFIG_FOLDER%2F$i/raw?ref=master")
-    if [ ! -w "$SSH_HEPLY_CONFIG_FOLDER/$i" ]; then
-      touch $SSH_HEPLY_CONFIG_FOLDER/$i
-      chmod 600 $SSH_HEPLY_CONFIG_FOLDER/$i
+    CONTENT=$(curl -s --header "PRIVATE-TOKEN: $SSH_CONFIG_REPO_TOKEN" "https://gitlab.com/api/v4/projects/$SSH_CONFIG_REPO_ID/repository/files/$SSH_CONFIG_FOLDER%2F$i/raw?ref=master")
+    if [ ! -w "$SSH_CONFIG_FOLDER_PATH/$i" ]; then
+      touch $SSH_CONFIG_FOLDER_PATH/$i
+      chmod 600 $SSH_CONFIG_FOLDER_PATH/$i
     fi
-    if [ ! -z "$CONTENT" ] && [ -w "$SSH_HEPLY_CONFIG_FOLDER/$i" ]; then
-      echo "$CONTENT" > "$SSH_HEPLY_CONFIG_FOLDER/$i"
-      echo "File $SSH_HEPLY_CONFIG_FOLDER/$i updated!"
+    if [ ! -z "$CONTENT" ] && [ -w "$SSH_CONFIG_FOLDER_PATH/$i" ]; then
+      echo "$CONTENT" > "$SSH_CONFIG_FOLDER_PATH/$i"
+      echo "File $SSH_CONFIG_FOLDER_PATH/$i updated!"
     fi
   done
 }
 
 # Print SSH config formatted hosts aliases
 sshls() {
-  SSH_HEPLY_CONFIG_FOLDER=~/.ssh/config.heply.d
-  if [[ -e $SSH_HEPLY_CONFIG_FOLDER && "$(ls -A $SSH_HEPLY_CONFIG_FOLDER)" ]]; then
+  SSH_CONFIG_FOLDER_PATH=~/.ssh/$SSH_CONFIG_FOLDER
+
+  if [[ -e $SSH_CONFIG_FOLDER_PATH && "$(ls -A $SSH_CONFIG_FOLDER_PATH)" ]]; then
     GREEN=$(tput setaf 2)
     NORMAL=$(tput sgr0)
-    HOSTS=( $(sed -n '/*/! s/Host //p' $SSH_HEPLY_CONFIG_FOLDER/*) )
-    USERS=( $(sed -n 's/User //p' $SSH_HEPLY_CONFIG_FOLDER/*) )
-    HOSTNAMES=( $(sed -n 's/Hostname //p' $SSH_HEPLY_CONFIG_FOLDER/*) )
-    PORTS=( $(sed -n 's/Port //p' $SSH_HEPLY_CONFIG_FOLDER/*) )
+    HOSTS=( $(sed -n '/*/! s/Host //p' $SSH_CONFIG_FOLDER_PATH/*) )
+    USERS=( $(sed -n 's/User //p' $SSH_CONFIG_FOLDER_PATH/*) )
+    HOSTNAMES=( $(sed -n 's/Hostname //p' $SSH_CONFIG_FOLDER_PATH/*) )
+    PORTS=( $(sed -n 's/Port //p' $SSH_CONFIG_FOLDER_PATH/*) )
     for ((i=1;i<=${#HOSTS[@]};++i)); do
       printf "%s -> %s@%s:%s\n" "${GREEN}${HOSTS[i]}${NORMAL}" "${USERS[i]}" "${HOSTNAMES[i]}" "${PORTS[i]}"
     done
   else
-    echo "$SSH_HEPLY_CONFIG_FOLDER folder doesn't exist or is empty!"
+    echo "$SSH_CONFIG_FOLDER_PATH folder doesn't exist or is empty!"
   fi
 }
 
