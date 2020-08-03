@@ -14,6 +14,19 @@ pwlen() {
   echo -e "$(pbpaste)\nCopied to clipboard!"
 }
 
+# Generate Bcrypt 10 rounds password
+pwbc() {
+  if [[ $2 == "char" ]]; then
+    PASSWORD=$(pwgen -Bcnsvy -r \<\>\=\+\'\"\?\^\(\)\`\:\~\;\:\[\]\{\}\.\,\\\/\| $1 1 | tr -d "\n");
+  else
+    PASSWORD=$(pwgen -Bcnsv $1 1 | tr -d "\n");
+  fi
+  BCRYPT_PASSWORD=$(htpasswd -nbBC 10 user $PASSWORD | awk -F 'user:' '{print $2}')
+  echo -e "Password: $PASSWORD"
+  echo $BCRYPT_PASSWORD | pbcopy
+  echo -e "Bcrypt password (copied to clipboard): $BCRYPT_PASSWORD"
+}
+
 # macOS
 alias rm="${aliases[rm]:-rm} -vi"
 alias cp="${aliases[cp]:-cp} -vi"
