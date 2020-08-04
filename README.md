@@ -74,6 +74,7 @@ mackup restore
 ## Other Homebrew formulas
 
 - ack
+- ansible
 - bat
 - composer
 - dnsmasq
@@ -89,6 +90,7 @@ mackup restore
 - stern
 - thefuck
 - tree
+- vagrant
 - watch
 - wget
 
