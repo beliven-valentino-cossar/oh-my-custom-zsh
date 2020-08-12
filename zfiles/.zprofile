@@ -11,3 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 # The Fuck
 # Configure alias for The Fuck
 eval $(thefuck --alias)
+
+# PHP
+export PATH="/usr/local/opt/php@7.3/bin:$PATH"
+export PATH="/usr/local/opt/php@7.3/sbin:$PATH"

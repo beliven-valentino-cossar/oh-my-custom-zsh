@@ -80,17 +80,17 @@ mackup restore
 - dnsmasq
 - duti
 - gnupg
-- helmfile
 - hey
 - httpie
-- kubectx
+- lando (cask)
 - mas
 - pgcli
+- php@7.3
 - php-cs-fixer
 - stern
 - thefuck
 - tree
-- vagrant
+- vagrant (cask)
 - watch
 - wget
 
