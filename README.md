@@ -77,15 +77,15 @@ mackup restore
 - ansible
 - bat
 - composer
-- dnsmasq
 - duti
 - gnupg
 - hey
 - httpie
 - lando (cask)
 - mas
+- mysql@5.7
 - pgcli
-- php@7.3
+- php
 - php-cs-fixer
 - stern
 - thefuck
@@ -93,6 +93,11 @@ mackup restore
 - vagrant (cask)
 - watch
 - wget
+
+# Composer global packages
+
+- `laravel/valet` - composer global require laravel/valet
+- `laravel/installer` - composer global require laravel/installer
 
 ## Authors
 
