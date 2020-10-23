@@ -16,10 +16,14 @@ pwlen() {
 
 # Generate Bcrypt 10 rounds password
 pwbc() {
-  if [[ $2 == "char" ]]; then
-    PASSWORD=$(pwgen -Bcnsvy -r \<\>\=\+\'\"\?\^\(\)\`\:\~\;\:\[\]\{\}\.\,\\\/\| $1 1 | tr -d "\n");
+  if [[ $1 =~ '^[0-9]+$' ]]; then
+    if [[ $2 == "char" ]]; then
+      PASSWORD=$(pwgen -Bcnsvy -r \<\>\=\+\'\"\?\^\(\)\`\:\~\;\:\[\]\{\}\.\,\\\/\| $1 1 | tr -d "\n");
+    else
+      PASSWORD=$(pwgen -Bcnsv $1 1 | tr -d "\n");
+    fi
   else
-    PASSWORD=$(pwgen -Bcnsv $1 1 | tr -d "\n");
+    PASSWORD=$1
   fi
   BCRYPT_PASSWORD=$(htpasswd -nbBC 10 user $PASSWORD | awk -F 'user:' '{print $2}')
   echo -e "Password: $PASSWORD"
