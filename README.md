@@ -86,7 +86,7 @@ mackup restore
 - mysql@5.7
 - pgcli
 - php
-- php-cs-fixer
+- php-code-sniffer
 - stern
 - thefuck
 - tree
