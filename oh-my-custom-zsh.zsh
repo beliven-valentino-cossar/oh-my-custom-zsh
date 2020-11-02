@@ -33,7 +33,6 @@ pwbc() {
 
 # macOS
 alias rm="${aliases[rm]:-rm} -vi"
-alias cp="${aliases[cp]:-cp} -vi"
 alias mv="${aliases[mv]:-mv} -vi"
 alias grep="grep --color=auto"
 alias rmds="find . -name '*.DS_Store' -type f -delete"
