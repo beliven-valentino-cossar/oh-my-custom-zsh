@@ -33,10 +33,10 @@ pwbcrypt() {
   else
     PASSWORD=$1
   fi
-  BCRYPT_PASSWORD=$(htpasswd -nbBC 10 user $PASSWORD | awk -F 'user:' '{print $2}')
+  BCRYPT_HASH=$(htpasswd -nbBC 10 user $PASSWORD | awk -F 'user:' '{print $2}')
   echo -e "Password: $PASSWORD"
-  echo $BCRYPT_PASSWORD | pbcopy
-  echo -e "Bcrypt password (copied to clipboard): $BCRYPT_PASSWORD"
+  echo $BCRYPT_HASH | tr -d "\n" | pbcopy
+  echo -e "Bcrypt hash (copied to clipboard): $BCRYPT_HASH"
 }
 
 # macOS
