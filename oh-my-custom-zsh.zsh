@@ -42,6 +42,7 @@ pwbcrypt() {
 # macOS
 alias rm="${aliases[rm]:-rm} -vi"
 alias mv="${aliases[mv]:-mv} -vi"
+alias cp="${aliases[cp]:-cp} -v"
 alias grep="grep --color=auto"
 alias rmds="find . -name '*.DS_Store' -type f -delete"
 alias hosts="vsa /etc/hosts"
