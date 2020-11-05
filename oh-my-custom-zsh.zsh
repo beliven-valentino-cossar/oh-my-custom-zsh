@@ -16,7 +16,7 @@ pw() {
   echo -e "$(pbpaste)\nCopied to clipboard!"
 }
 
-# PWBCrypt - Custom bcrypt password generator function
+# PW bcrypt - Custom bcrypt password generator function
 # Usage:
 # - pwbcrypt newPassword (generate bcrypt hash)
 # - pwbcrypt 20 (genrate random bcrypt hash and password, without special characters)
