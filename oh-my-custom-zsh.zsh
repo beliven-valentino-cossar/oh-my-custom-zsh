@@ -1,11 +1,13 @@
 # Read from ENV
 export $(egrep -v '^#' $ZSH_CUSTOM/.env | xargs)
 
-# PWLen - custom password generator function
-# Usage: pwlen 20 (without special characters) or pwlen 20 char (with special characters)
+# PW - Custom password generator function
+# Usage:
+# - pw 20 (genrate random password, without special characters)
+# - pw 20 char (genrate random password, with special characters)
 # Required pwgen, install with: brew install pwgen
 # For further help: pwgen -h
-pwlen() {
+pw() {
   if [[ $2 == "char" ]]; then
     pwgen -Bcnsvy -r \<\>\=\+\'\"\?\^\(\)\`\:\~\;\:\[\]\{\}\.\,\\\/\| $1 1 | tr -d "\n" | pbcopy;
   else
@@ -14,8 +16,14 @@ pwlen() {
   echo -e "$(pbpaste)\nCopied to clipboard!"
 }
 
-# Generate Bcrypt 10 rounds password
-pwbc() {
+# PWBCrypt - Custom bcrypt password generator function
+# Usage:
+# - pwbcrypt newPassword (generate bcrypt hash)
+# - pwbcrypt 20 (genrate random bcrypt hash and password, without special characters)
+# - pwbcrypt 20 char (genrate random bcrypt hash and password, with special characters)
+# Required pwgen, install with: brew install pwgen
+# For further help: pwgen -h
+pwbcrypt() {
   if [[ $1 =~ '^[0-9]+$' ]]; then
     if [[ $2 == "char" ]]; then
       PASSWORD=$(pwgen -Bcnsvy -r \<\>\=\+\'\"\?\^\(\)\`\:\~\;\:\[\]\{\}\.\,\\\/\| $1 1 | tr -d "\n");
