@@ -55,6 +55,9 @@ alias restartbar="sudo pkill TouchBarServer && sudo pkill 'Touch Bar agent' && s
 # alias lsdropbox="find ~/Dropbox\ \(Personale\) ~/Dropbox\ \(Company\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -print"
 # alias cldropbox="find ~/Dropbox\ \(Personale\) ~/Dropbox\ \(Company\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -exec rm -f {} \;"
 
+# Git
+alias gcs="git checkout staging"
+
 # ssh-agent
 alias lsssh="ssh-add -L"
 alias clssh="ssh-add -D"
