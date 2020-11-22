@@ -81,6 +81,10 @@ alias vabu="vagrant box update"
 # Visual Studio Code
 alias vsls="code --list-extensions"
 
+# Valet
+alias valetstop="brew services stop mysql@5.7 && sudo brew services stop nginx"
+alias valetstart="brew services start mysql@5.7 && sudo brew services start nginx"
+
 # Get SSH config files from GitLab
 sshget() {
   SSH_CONFIG_FOLDER_PATH=~/.ssh/$SSH_CONFIG_FOLDER
