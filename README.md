@@ -83,7 +83,7 @@ mackup restore
 - httpie
 - lando (cask)
 - mas
-- mysql@5.7
+- mysql@5.7 (run `brew link --force mysql@5.7` after install)
 - pgcli
 - php
 - php-code-sniffer
@@ -96,8 +96,8 @@ mackup restore
 
 # Composer global packages
 
-- `laravel/valet` - composer global require laravel/valet
 - `laravel/installer` - composer global require laravel/installer
+- `laravel/valet` - composer global require laravel/valet
 
 ## Authors
 
