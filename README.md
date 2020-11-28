@@ -82,6 +82,7 @@ mackup restore
 - hey
 - httpie
 - lando (cask)
+- mailhog (run `brew services start mailhog` after install)
 - mas
 - mysql@5.7 (run `brew link --force mysql@5.7` after install)
 - pgcli
@@ -96,8 +97,8 @@ mackup restore
 
 # Composer global packages
 
-- `laravel/installer` - composer global require laravel/installer
-- `laravel/valet` - composer global require laravel/valet
+- [laravel/installer](https://laravel.com/docs/8.x/installation) - run `composer global require laravel/installer` to install
+- [laravel/valet](https://laravel.com/docs/8.x/valet) - run `composer global require laravel/valet` to install
 
 ## Authors
 
