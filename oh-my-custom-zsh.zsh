@@ -170,13 +170,23 @@ theme() {
   echo "Theme folder doesn't exist!"
 }
 
-# Roots Sync Script utility
+# Roots Sync Script utility for Lando
 lsync() {
   if [ -f "scripts/sync.sh" ]; then
     lando ssh -c "cd scripts && ./sync.sh $1 $2 --local"
   fi;
   if [ -f "sync.sh" ]; then
     lando ssh -c "./sync.sh $1 $2 --local"
+  fi;
+}
+
+# Roots Sync Script utility for Valet
+vsync() {
+  if [ -f "scripts/sync.sh" ]; then
+    cd scripts && ./sync.sh $1 $2 --local && cd ..
+  fi;
+  if [ -f "sync.sh" ]; then
+    sync.sh $1 $2 --local
   fi;
 }
 
