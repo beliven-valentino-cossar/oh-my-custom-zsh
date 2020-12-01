@@ -84,7 +84,7 @@ mackup restore
 - lando (cask)
 - mailhog (run `brew services start mailhog` after install)
 - mas
-- mysql@5.7 (run `brew link --force mysql@5.7` after install)
+- mysql@5.7 (run `brew link --force mysql@5.7` and `brew services start mysql@5.7` after install)
 - pgcli
 - php@7.4 (run `brew link --force php@7.4` after install)
 - php-code-sniffer
