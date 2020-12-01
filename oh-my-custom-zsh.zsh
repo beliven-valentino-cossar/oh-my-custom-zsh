@@ -172,22 +172,30 @@ theme() {
 
 # Roots Sync Script utility for Lando
 lsync() {
-  if [ -f "scripts/sync.sh" ]; then
-    lando ssh -c "cd scripts && ./sync.sh $1 $2 --local"
-  fi;
-  if [ -f "sync.sh" ]; then
-    lando ssh -c "./sync.sh $1 $2 --local"
-  fi;
+  if [[ "$2" = "production" && "$3" != "--force" ]]; then
+    echo "You can't override production environment without '--force' as third parameter!"
+  else
+    if [ -f "scripts/sync.sh" ]; then
+      lando ssh -c "cd scripts && ./sync.sh $1 $2 --local"
+    fi
+    if [ -f "sync.sh" ]; then
+      lando ssh -c "./sync.sh $1 $2 --local"
+    fi
+  fi
 }
 
 # Roots Sync Script utility for Valet
 vsync() {
-  if [ -f "scripts/sync.sh" ]; then
-    cd scripts && ./sync.sh $1 $2 --local && cd ..
-  fi;
-  if [ -f "sync.sh" ]; then
-    sync.sh $1 $2 --local
-  fi;
+  if [[ "$2" = "production" && "$3" != "--force" ]]; then
+    echo "You can't override production environment without '--force' as third parameter!"
+  else
+    if [ -f "scripts/sync.sh" ]; then
+      cd scripts && ./sync.sh $1 $2 --local && cd ..
+    fi
+    if [ -f "sync.sh" ]; then
+      sync.sh $1 $2 --local
+    fi
+  fi
 }
 
 # Quick change Ansible installed version
