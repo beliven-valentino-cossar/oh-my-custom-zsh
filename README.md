@@ -86,7 +86,7 @@ mackup restore
 - mas
 - mysql@5.7 (run `brew link --force mysql@5.7` after install)
 - pgcli
-- php
+- php@7.4 (run `brew link --force php@7.4` after install)
 - php-code-sniffer
 - stern
 - thefuck
