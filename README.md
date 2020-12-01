@@ -98,7 +98,7 @@ mackup restore
 # Composer global packages
 
 - [laravel/installer](https://laravel.com/docs/8.x/installation) - run `composer global require laravel/installer` to install
-- [laravel/valet](https://laravel.com/docs/8.x/valet) - run `composer global require laravel/valet` to install
+- [laravel/valet](https://laravel.com/docs/8.x/valet) - run `composer global require laravel/valet` to install (run `valet use php@7.4` to make sure that Valet uses php@7.4)
 
 ## Authors
 
