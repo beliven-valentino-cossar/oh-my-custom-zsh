@@ -1,6 +1,3 @@
-# Read from ENV
-export $(egrep -v '^#' $ZSH_CUSTOM/.env | xargs)
-
 # PW - Custom password generator function
 # Usage:
 # - pw 20 (genrate random password, without special characters)
@@ -84,65 +81,6 @@ alias vsls="code --list-extensions"
 # Valet
 alias valetstop="brew services stop mysql@5.7 && sudo brew services stop nginx"
 alias valetstart="brew services start mysql@5.7 && sudo brew services start nginx"
-
-# Get SSH config files from GitLab
-sshget() {
-  SSH_CONFIG_FOLDER_PATH=~/.ssh/$SSH_CONFIG_FOLDER
-  SSH_CONFIG_FILE_PATH=~/.ssh/config
-
-  if [ ! -w "$SSH_CONFIG_FILE_PATH" ]; then
-    touch $SSH_CONFIG_FILE_PATH
-    chmod 600 $SSH_CONFIG_FILE_PATH
-    echo -e "#\n# Include config files\n#\nInclude $SSH_CONFIG_FOLDER/*" >> $SSH_CONFIG_FILE_PATH
-    echo "File $SSH_CONFIG_FILE_PATH created!"
-    echo "Add include for config folder in $SSH_CONFIG_FILE_PATH file!"
-  fi
-
-  if ! grep -q "Include $SSH_CONFIG_FOLDER/*" "$SSH_CONFIG_FILE_PATH"; then
-    echo -e "\n#\n# Include config files\n#\nInclude $SSH_CONFIG_FOLDER/*" >> $SSH_CONFIG_FILE_PATH
-    echo "Add include for config folder in $SSH_CONFIG_FILE_PATH file!"
-  fi
-
-  if [[ ! -e $SSH_CONFIG_FOLDER_PATH ]]; then
-    mkdir $SSH_CONFIG_FOLDER_PATH
-    chmod 700 $SSH_CONFIG_FOLDER_PATH
-    echo "Folder $SSH_CONFIG_FOLDER_PATH created!"
-  fi
-
-  LIST=$(curl -s --header "PRIVATE-TOKEN: $SSH_CONFIG_REPO_TOKEN" "https://gitlab.com/api/v4/projects/$SSH_CONFIG_REPO_ID/repository/tree?path=$SSH_CONFIG_FOLDER&ref=master")
-  FILES=$(echo "$LIST" | tr ",{" "\n" | grep name | cut -d ':' -f 2 | sed -e 's/"//g' | paste -sd " " -)
-  FILES=(`echo ${FILES}`)
-  for i in "${FILES[@]}"; do
-    CONTENT=$(curl -s --header "PRIVATE-TOKEN: $SSH_CONFIG_REPO_TOKEN" "https://gitlab.com/api/v4/projects/$SSH_CONFIG_REPO_ID/repository/files/$SSH_CONFIG_FOLDER%2F$i/raw?ref=master")
-    if [ ! -w "$SSH_CONFIG_FOLDER_PATH/$i" ]; then
-      touch $SSH_CONFIG_FOLDER_PATH/$i
-      chmod 600 $SSH_CONFIG_FOLDER_PATH/$i
-    fi
-    if [ ! -z "$CONTENT" ] && [ -w "$SSH_CONFIG_FOLDER_PATH/$i" ]; then
-      echo "$CONTENT" > "$SSH_CONFIG_FOLDER_PATH/$i"
-      echo "File $SSH_CONFIG_FOLDER_PATH/$i updated!"
-    fi
-  done
-}
-
-# Print SSH config formatted hosts aliases
-sshls() {
-  SSH_CONFIG_FOLDER_PATH=~/.ssh/$SSH_CONFIG_FOLDER
-
-  if [[ -e $SSH_CONFIG_FOLDER_PATH && "$(ls -A $SSH_CONFIG_FOLDER_PATH)" ]]; then
-    GREEN=$(tput setaf 2)
-    NORMAL=$(tput sgr0)
-    HOSTS=( $(sed -n '/*/! s/Host //p' $SSH_CONFIG_FOLDER_PATH/*) )
-    USERS=( $(sed -n 's/User //p' $SSH_CONFIG_FOLDER_PATH/*) )
-    HOSTNAMES=( $(sed -n 's/Hostname //p' $SSH_CONFIG_FOLDER_PATH/*) )
-    PORTS=( $(sed -n 's/Port //p' $SSH_CONFIG_FOLDER_PATH/*) )
-    for ((i=1;i<=${#HOSTS[@]};++i)); do
-      printf "%s -> %s@%s:%s\n" "${GREEN}${HOSTS[i]}${NORMAL}" "${USERS[i]}" "${HOSTNAMES[i]}" "${PORTS[i]}"
-    done
-  else
-    echo "$SSH_CONFIG_FOLDER_PATH folder doesn't exist or is empty!"
-  fi
-}
 
 # Print plist file to stdout (XML format)
 catplist() {
