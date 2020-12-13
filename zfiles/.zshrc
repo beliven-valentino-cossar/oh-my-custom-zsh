@@ -59,6 +59,7 @@ plugins=(
   dirhistory
   gem
   git
+  golang
   gulp
   npm
   nvm
