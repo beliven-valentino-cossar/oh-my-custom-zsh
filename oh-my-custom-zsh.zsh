@@ -188,14 +188,8 @@ _works() {
 }
 compdef _works works
 
-# Personal aliases
-alias trellis-database-uploads-migration="cd ~/Workspace/trellis-database-uploads-migration"
-alias rankz="cd ~/Workspace/wordpress-plugins/rankz"
-alias bedrock-lando-shipit="cd ~/Workspace/bedrock-lando-shipit"
-
-# Other customers aliases
-alias ellegiti="cd ~/Workspace/ellegiti.it/app/public"
-alias remida="cd ~/Workspace/gioielliremida.it/app/public"
-
-# Example workspace alias
-alias example="cd ~/Workspace/example.com"
+# Benchmark shell load time
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}

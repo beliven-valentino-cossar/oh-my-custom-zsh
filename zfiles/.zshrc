@@ -47,29 +47,26 @@ HIST_STAMPS="dd/mm/yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=~/.oh-my-custom-zsh
 
+# ZSH NVM
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  battery
-  bower
   colored-man-pages
   composer
   dirhistory
-  gem
   git
   golang
-  gulp
-  npm
-  nvm
   osx
-  vagrant
   vscode
   wp-cli
-  yarn
   z
   zsh-autosuggestions
+  zsh-nvm
   zsh-syntax-highlighting
   zsh_reload
 )
@@ -109,19 +106,14 @@ fi
 SPACESHIP_CHAR_SYMBOL="→"
 SPACESHIP_CHAR_SUFFIX=" "
 SPACESHIP_DIR_TRUNC=6
-SPACESHIP_PACKAGE_SYMBOL="❒ "
-SPACESHIP_RUBY_SYMBOL="✦ "
-SPACESHIP_PHP_SYMBOL="ℙ "
 SPACESHIP_ELIXIR_SHOW=false
 SPACESHIP_XCODE_SHOW_LOCAL=false
 SPACESHIP_XCODE_SHOW_GLOBAL=false
 SPACESHIP_SWIFT_SHOW_LOCAL=false
 SPACESHIP_SWIFT_SHOW_GLOBAL=false
-SPACESHIP_GOLANG_SHOW=false
 SPACESHIP_RUST_SHOW=false
 SPACESHIP_HASKELL_SHOW=false
 SPACESHIP_JULIA_SHOW=false
-SPACESHIP_DOCKER_SHOW=false
 SPACESHIP_AWS_SHOW=false
 SPACESHIP_VENV_SHOW=false
 SPACESHIP_CONDA_SHOW=false

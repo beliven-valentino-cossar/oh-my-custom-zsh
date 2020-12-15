@@ -14,12 +14,17 @@ Custom Oh My Zsh folder and other utilities.
 - [Command Line Tools](https://developer.apple.com/xcode/features) - recommended install with `xcode-select --install`
 - [Homebrew](https://brew.sh/index_it.html) - recommended install from website
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - recommended install with curl
-- [Mackup](https://github.com/lra/mackup) - recommended install with brew
-- [NVM](https://github.com/creationix/nvm) - recommended install with brew
-- [Python](https://www.python.org) - recommended install with brew
-- [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with brew
-- [Gulp](http://gulpjs.com) - recommended install with npm
-- [Yarn](https://yarnpkg.com) - recommended install with npm
+- [Mackup](https://github.com/lra/mackup) - recommended install with `brew install mackup`
+- [NVM](https://github.com/creationix/nvm) - recommended install with `zsh-nvm`
+- [Python](https://www.python.org) - recommended install with `brew install python`
+- [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with `brew install pwgen`
+- [Golang](https://golang.org) - recommended install with `brew install go` (run `test -d "${GOPATH}" || mkdir "${GOPATH}"` and `test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"` after install)
+- [PHP](https://www.php.net) - recommended install with `brew install php@7.4` (run `brew link --force php@7.4` after install)
+- [MySQL](https://www.mysql.com) - recommended install with `brew install mysql@5.7` (run `brew link --force mysql@5.7` and `brew services start mysql@5.7` after install)
+- [Mailhog](https://github.com/mailhog/MailHog) - recommended install with `brew install mailhog` (run `brew services start mailhog` after install)
+- [Composer](https://getcomposer.org) - recommended install with `brew install composer`
+- [Lando](https://lando.dev) - recommended install with `brew install lando`
+- [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) - recommended install with `brew install php-code-sniffer`
 
 ### Basic Installation
 
@@ -63,42 +68,47 @@ mackup restore
 
 ### Custom plugins
 
-- [vscode](https://github.com/valentinocossar/vscode)
-- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [vscode](https://github.com/valentinocossar/vscode) - `git clone https://github.com/valentinocossar/vscode $ZSH_CUSTOM/plugins/vscode`
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - `git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+- [zsh-nvm](https://github.com/lukechilds/zsh-nvm) - `git clone https://github.com/lukechilds/zsh-nvm $ZSH_CUSTOM/plugins/zsh-nvm`
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - `git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
 
 ### Custom themes
 
 - [spaceship](https://github.com/denysdovhan/spaceship-zsh-theme)
+
+## Composer global packages
+
+- [laravel/installer](https://laravel.com/docs/8.x/installation) - run `composer global require laravel/installer` to install
+- [laravel/valet](https://laravel.com/docs/8.x/valet) - run `composer global require laravel/valet` to install (run `valet use php@7.4` to make sure that Valet uses php@7.4)
+
+## NPM global packages
+
+- gulp - run `npm i -g gulp`
+- yarn - run `npm i -g yarn`
+- htmlhint - run `npm i -g htmlhint`
+- prettier - run `npm i -g prettier`
+- prettier-standard - run `npm i -g prettier-standard`
+- standard - run `npm i -g standard`
+- typescript - run `npm i -g typescript`
+- shipit-cli - run `npm i -g shipit-cli`
 
 ## Other Homebrew formulas
 
 - ack
 - ansible
 - bat
-- composer
 - duti
 - gnupg
 - hey
 - httpie
-- lando (cask)
-- mailhog (run `brew services start mailhog` after install)
 - mas
-- mysql@5.7 (run `brew link --force mysql@5.7` and `brew services start mysql@5.7` after install)
 - pgcli
-- php@7.4 (run `brew link --force php@7.4` after install)
-- php-code-sniffer
 - stern
-- thefuck
 - tree
-- vagrant (cask)
+- vagrant
 - watch
 - wget
-
-# Composer global packages
-
-- [laravel/installer](https://laravel.com/docs/8.x/installation) - run `composer global require laravel/installer` to install
-- [laravel/valet](https://laravel.com/docs/8.x/valet) - run `composer global require laravel/valet` to install (run `valet use php@7.4` to make sure that Valet uses php@7.4)
 
 ## Authors
 
