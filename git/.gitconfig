@@ -1,0 +1,14 @@
+[mergetool]
+  keepBackup = true
+  prompt = false
+[core]
+  editor = code --wait
+  excludesfile = ~/.gitignore_global
+[web]
+  browser = chrome
+[diff]
+  ignoreSubmodules = dirty
+[includeIf "gitdir:~/Workspace/"]
+  path = ~/.gitconfig_workspace
+[includeIf "gitdir:~/GitHub/"]
+  path = ~/.gitconfig_github

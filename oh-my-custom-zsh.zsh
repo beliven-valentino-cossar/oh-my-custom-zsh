@@ -188,6 +188,28 @@ _works() {
 }
 compdef _works works
 
+# Change GitHub project
+ghub() {
+  PROJ=$1
+  if [ ! -d "$HOME/GitHub/$PROJ" ] && [ "$PROJ" != "" ]; then
+    echo "$HOME/GitHub/$PROJ is not a directory!"
+  else
+    if [ "$PROJ" = "" ]; then
+      cd $HOME/GitHub
+    else
+      cd $HOME/GitHub/$PROJ
+    fi
+  fi
+  return
+}
+
+# Change GitHub project auto completion
+_ghub() {
+  DIRS=(`ls -d $HOME/GitHub/*/ | xargs -n 1 basename | tr '\n' ' '`)
+  compadd -X 'Select a GitHub project:' $DIRS
+}
+compdef _ghub ghub
+
 # Benchmark shell load time
 timezsh() {
   shell=${1-$SHELL}
