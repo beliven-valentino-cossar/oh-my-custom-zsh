@@ -12,5 +12,5 @@
   path = ~/.gitconfig_workspace
 [includeIf "gitdir:~/GitHub/"]
   path = ~/.gitconfig_github
-[includeIf "gitdir:~/.custom-oh-my-zsh/"]
+[includeIf "gitdir:~/.oh-my-custom-zsh/"]
   path = ~/.gitconfig_github
