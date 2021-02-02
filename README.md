@@ -127,6 +127,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - hey
 - httpie
 - mas
+- nmap
 - pgcli
 - stern
 - tree
