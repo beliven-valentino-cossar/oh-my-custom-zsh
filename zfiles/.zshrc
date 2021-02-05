@@ -47,10 +47,6 @@ HIST_STAMPS="dd/mm/yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=~/.oh-my-custom-zsh
 
-# ZSH NVM
-export NVM_LAZY_LOAD=true
-export NVM_COMPLETION=true
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -66,7 +62,6 @@ plugins=(
   wp-cli
   z
   zsh-autosuggestions
-  zsh-nvm
   zsh-syntax-highlighting
   zsh_reload
 )

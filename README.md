@@ -15,7 +15,7 @@ Custom Oh My Zsh folder and other utilities.
 - [Homebrew](https://brew.sh/index_it.html) - recommended install from website
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - recommended install with curl
 - [Mackup](https://github.com/lra/mackup) - recommended install with `brew install mackup`
-- [NVM](https://github.com/creationix/nvm) - recommended install with `zsh-nvm`
+- [fnm](https://github.com/Schniz/fnm) - recommended install with `brew install fnm`
 - [Python](https://www.python.org) - recommended install with `brew install python`
 - [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with `brew install pwgen`
 - [Golang](https://golang.org) - recommended install with `brew install go` (run `test -d "${GOPATH}" || mkdir "${GOPATH}"` and `test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"` after install)
@@ -94,7 +94,6 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 
 - [vscode](https://github.com/valentinocossar/vscode) - `git clone https://github.com/valentinocossar/vscode $ZSH_CUSTOM/plugins/vscode`
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - `git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
-- [zsh-nvm](https://github.com/lukechilds/zsh-nvm) - `git clone https://github.com/lukechilds/zsh-nvm $ZSH_CUSTOM/plugins/zsh-nvm`
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - `git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
 
 ### Custom themes
