@@ -57,6 +57,7 @@ plugins=(
   dirhistory
   git
   golang
+  laravel
   osx
   vscode
   wp-cli
