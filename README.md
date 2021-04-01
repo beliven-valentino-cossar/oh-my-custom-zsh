@@ -121,6 +121,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - ack
 - ansible
 - bat
+- cracklib
 - duti
 - gnupg
 - hey
