@@ -8,6 +8,8 @@
   browser = edge
 [diff]
   ignoreSubmodules = dirty
+[pull]
+  ff = only
 [includeIf "gitdir:~/Workspace/"]
   path = ~/.gitconfig_workspace
 [includeIf "gitdir:~/GitHub/"]
