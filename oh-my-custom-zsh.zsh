@@ -97,6 +97,10 @@ theme() {
     cd site/web/app/themes/$1
     return
   fi
+  if [ -d "wordpress/web/app/themes/$1" ]; then
+    cd wordpress/web/app/themes/$1
+    return
+  fi
   if [ -d "web/app/themes/$1" ]; then
     cd web/app/themes/$1
     return

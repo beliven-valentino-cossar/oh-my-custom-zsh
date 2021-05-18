@@ -16,3 +16,5 @@
   path = ~/.gitconfig_github
 [includeIf "gitdir:~/.oh-my-custom-zsh/"]
   path = ~/.gitconfig_github
+[init]
+	defaultBranch = master
