@@ -82,6 +82,9 @@ alias vsls="code --list-extensions"
 alias valetstop="brew services stop mysql@5.7 && sudo brew services stop nginx"
 alias valetstart="brew services start mysql@5.7 && sudo brew services start nginx"
 
+# Sail
+alias sail='bash ./vendor/bin/sail'
+
 # Print plist file to stdout (XML format)
 catplist() {
   plutil -convert xml1 -o - $1
