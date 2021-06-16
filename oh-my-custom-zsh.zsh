@@ -79,8 +79,8 @@ alias vabu="vagrant box update"
 alias vsls="code --list-extensions"
 
 # Valet
-alias valetstop="brew services stop mysql@5.7 && sudo brew services stop nginx && brew services stop mailhog"
-alias valetstart="brew services start mysql@5.7 && sudo brew services start nginx && brew services start mailhog"
+alias valetstop="sudo brew services stop php@7.4 && brew services stop mysql@5.7 && sudo brew services stop nginx && brew services stop mailhog"
+alias valetstart="sudo brew services start php@7.4 && brew services start mysql@5.7 && sudo brew services start nginx && brew services start mailhog"
 
 # Sail
 alias sail='bash ./vendor/bin/sail'
