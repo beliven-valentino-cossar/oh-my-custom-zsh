@@ -85,6 +85,9 @@ alias valetstart="sudo brew services start php@7.4 && brew services start mysql@
 # Sail
 alias sail='bash ./vendor/bin/sail'
 
+# Manage
+alias manage='./manage.sh'
+
 # Print plist file to stdout (XML format)
 catplist() {
   plutil -convert xml1 -o - $1
