@@ -8,3 +8,7 @@ eval "$(fnm env)"
 export GOPATH="$HOME/.go"
 export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
+
+#### FIG ENV VARIABLES ####
+[[ -s ~/.fig/fig.sh ]] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####

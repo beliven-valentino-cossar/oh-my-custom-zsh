@@ -88,6 +88,9 @@ alias sail='bash ./vendor/bin/sail'
 # Manage
 alias manage='./manage.sh'
 
+# WordPress
+alias wordpress='./wordpress.sh'
+
 # Print plist file to stdout (XML format)
 catplist() {
   plutil -convert xml1 -o - $1
