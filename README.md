@@ -20,7 +20,7 @@ Custom Oh My Zsh folder and other utilities.
 - [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with `brew install pwgen`
 - [Golang](https://golang.org) - recommended install with `brew install go` (run `test -d "${GOPATH}" || mkdir "${GOPATH}"` and `test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"` after install)
 - [PHP](https://www.php.net) - recommended install with `brew install php@7.4` (run `brew link --force php@7.4` after install)
-- [MySQL](https://www.mysql.com) - recommended install with `brew install mysql@5.7` (run `brew link --force mysql@5.7` and `brew services start mysql@5.7` after install)
+- [MySQL](https://www.mysql.com) - recommended install with `brew install mysql` (run `brew link --force mysql` and `brew services start mysql` after install)
 - [Mailhog](https://github.com/mailhog/MailHog) - recommended install with `brew install mailhog` (run `brew services start mailhog` after install)
 - [Composer](https://getcomposer.org) - recommended install with `brew install composer`
 - [Lando](https://lando.dev) - recommended install with `brew install lando`
