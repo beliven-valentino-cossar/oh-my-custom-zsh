@@ -23,7 +23,6 @@ Custom Oh My Zsh folder and other utilities.
 - [MySQL](https://www.mysql.com) - recommended install with `brew install mysql` (run `brew link --force mysql` and `brew services start mysql` after install)
 - [Mailhog](https://github.com/mailhog/MailHog) - recommended install with `brew install mailhog` (run `brew services start mailhog` after install)
 - [Composer](https://getcomposer.org) - recommended install with `brew install composer`
-- [Lando](https://lando.dev) - recommended install with `brew install lando`
 - [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) - recommended install with `brew install php-code-sniffer`
 
 ### Basic Installation
@@ -94,6 +93,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 
 - [vscode](https://github.com/valentinocossar/vscode) - `git clone https://github.com/valentinocossar/vscode $ZSH_CUSTOM/plugins/vscode`
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - `git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+- [zsh-interactive-cd](https://github.com/changyuheng/zsh-interactive-cd) - `git clone https://github.com/changyuheng/zsh-interactive-cd $ZSH_CUSTOM/plugins/zsh-interactive-cd`
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - `git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
 
 ### Custom themes
@@ -108,13 +108,9 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 ## NPM global packages
 
 - gulp - run `npm i -g gulp`
-- yarn - run `npm i -g yarn`
 - htmlhint - run `npm i -g htmlhint`
 - prettier - run `npm i -g prettier`
-- prettier-standard - run `npm i -g prettier-standard`
 - standard - run `npm i -g standard`
-- typescript - run `npm i -g typescript`
-- shipit-cli - run `npm i -g shipit-cli`
 
 ## Other Homebrew formulas
 
@@ -137,6 +133,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - vagrant
 - watch
 - wget
+- wp-cli
 
 ## Authors
 

@@ -63,6 +63,7 @@ plugins=(
   wp-cli
   z
   zsh-autosuggestions
+  zsh-interactive-cd
   zsh-syntax-highlighting
   zsh_reload
 )
