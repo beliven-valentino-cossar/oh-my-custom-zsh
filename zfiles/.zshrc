@@ -65,7 +65,6 @@ plugins=(
   zsh-autosuggestions
   zsh-interactive-cd
   zsh-syntax-highlighting
-  zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
