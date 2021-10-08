@@ -68,6 +68,7 @@ plugins=(
   wp-cli
   z
   zsh-autosuggestions
+  zsh-interactive-cd
   zsh-syntax-highlighting
 )
 
@@ -125,6 +126,10 @@ SPACESHIP_KUBECONTEXT_SHOW=false
 # Temporary fix issue autosuggest after incompatible paste and arrow right
 # See https://github.com/zsh-users/zsh-autosuggestions/issues/351
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste accept-line)
+
+# Override auto cd with arrow up and arrow down
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
 
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
