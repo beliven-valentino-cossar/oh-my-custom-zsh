@@ -126,10 +126,6 @@ SPACESHIP_KUBECONTEXT_SHOW=false
 # Override key bindings
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
-bindkey "^[[C" end-of-line
-bindkey "^[[D" beginning-of-line
-bindkey "^[^[[C" forward-word
-bindkey "^[^[[D" backward-word
 
 # Temporary fix issue autosuggest after incompatible paste and arrow right
 # See https://github.com/zsh-users/zsh-autosuggestions/issues/351
