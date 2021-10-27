@@ -4,6 +4,8 @@
 [core]
   editor = code --wait
   excludesfile = ~/.gitignore_global
+[init]
+  defaultBranch = master
 [web]
   browser = edge
 [diff]
@@ -16,5 +18,3 @@
   path = ~/.gitconfig_github
 [includeIf "gitdir:~/.oh-my-custom-zsh/"]
   path = ~/.gitconfig_github
-[init]
-	defaultBranch = master
