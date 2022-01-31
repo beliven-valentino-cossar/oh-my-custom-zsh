@@ -96,31 +96,6 @@ catplist() {
   plutil -convert xml1 -o - $1
 }
 
-# Quick jump into WordPress theme folder
-theme() {
-  if [ -d "../site/web/app/themes/$1" ]; then
-    cd ../site/web/app/themes/$1
-    return
-  fi
-  if [ -d "site/web/app/themes/$1" ]; then
-    cd site/web/app/themes/$1
-    return
-  fi
-  if [ -d "wordpress/web/app/themes/$1" ]; then
-    cd wordpress/web/app/themes/$1
-    return
-  fi
-  if [ -d "web/app/themes/$1" ]; then
-    cd web/app/themes/$1
-    return
-  fi
-  if [ -d "wp-content/themes/$1" ]; then
-    cd wp-content/themes/$1
-    return
-  fi
-  echo "Theme folder doesn't exist!"
-}
-
 # Change workspace
 works() {
   PROJ=$1
@@ -169,4 +144,34 @@ compdef _ghub ghub
 timezsh() {
   shell=${1-$SHELL}
   for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
+
+# Switch PHP version for Homebrew and Laravel Valet
+phpswitch() {
+  brew link --overwrite php@$1 && valet use --force php@$1
+}
+
+# Quick jump into WordPress theme folder
+theme() {
+  if [ -d "../site/web/app/themes/$1" ]; then
+    cd ../site/web/app/themes/$1
+    return
+  fi
+  if [ -d "site/web/app/themes/$1" ]; then
+    cd site/web/app/themes/$1
+    return
+  fi
+  if [ -d "wordpress/web/app/themes/$1" ]; then
+    cd wordpress/web/app/themes/$1
+    return
+  fi
+  if [ -d "web/app/themes/$1" ]; then
+    cd web/app/themes/$1
+    return
+  fi
+  if [ -d "wp-content/themes/$1" ]; then
+    cd wp-content/themes/$1
+    return
+  fi
+  echo "Theme folder doesn't exist!"
 }
