@@ -82,8 +82,8 @@ alias vsls="code --list-extensions"
 alias sail='bash ./vendor/bin/sail'
 
 # Valet
-alias valetstop="sudo brew services stop php@8.0 && sudo brew services stop php@7.4 && brew services stop mysql && sudo brew services stop nginx && brew services stop mailhog && brew services stop redis"
-alias valetstart="sudo brew services start php@8.0 && sudo brew services start php@7.4 && brew services start mysql && sudo brew services start nginx && brew services start mailhog && brew services start redis"
+alias valetstop="brew services stop mysql && sudo brew services stop nginx && brew services stop mailhog && brew services stop redis"
+alias valetstart="brew services start mysql && sudo brew services start nginx && brew services start mailhog && brew services start redis"
 
 # WP Sync script
 alias wpsync="./wpsync.sh"
