@@ -88,6 +88,9 @@ alias valetstart="brew services start mysql && sudo brew services start nginx &&
 # WP Sync script
 alias wpsync="./wpsync.sh"
 
+# Pot
+alias pot='./pot.sh'
+
 # Manage
 alias manage='./manage.sh'
 
