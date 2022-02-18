@@ -19,9 +19,7 @@ Custom Oh My Zsh folder and other utilities.
 - [Python](https://www.python.org) - recommended install with `brew install python`
 - [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with `brew install pwgen`
 - [Golang](https://golang.org) - recommended install with `brew install go` (run `test -d "${GOPATH}" || mkdir "${GOPATH}"` and `test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"` after install)
-- [PHP](https://www.php.net) - recommended install with `brew install php@7.4 && brew install php` (run `brew link --force php@7.4` after install)
-- [MySQL](https://www.mysql.com) - recommended install with `brew install mysql` (run `brew link --force mysql` and `brew services start mysql` after install)
-- [Mailhog](https://github.com/mailhog/MailHog) - recommended install with `brew install mailhog` (run `brew services start mailhog` after install)
+- [PHP](https://www.php.net) - recommended install with `brew install php@8.0 && brew install php` (run `brew link --force php@8.0` after install)
 - [Composer](https://getcomposer.org) - recommended install with `brew install composer`
 - [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) - recommended install with `brew install php-code-sniffer`
 
@@ -103,7 +101,6 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 ## Composer global packages
 
 - [laravel/installer](https://laravel.com/docs/8.x/installation) - run `composer global require laravel/installer` to install
-- [laravel/valet](https://laravel.com/docs/8.x/valet) - run `composer global require laravel/valet` to install (run `valet use php@7.4` to make sure that Valet uses php@7.4)
 
 ## NPM global packages
 

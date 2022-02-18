@@ -81,10 +81,6 @@ alias vsls="code --list-extensions"
 # Sail
 alias sail='bash ./vendor/bin/sail'
 
-# Valet
-alias valetstop="brew services stop mysql && sudo brew services stop nginx && brew services stop mailhog && brew services stop redis"
-alias valetstart="brew services start mysql && sudo brew services start nginx && brew services start mailhog && brew services start redis"
-
 # Pot CLI
 alias pot='./pot.sh'
 
@@ -144,15 +140,6 @@ compdef _ghub ghub
 timezsh() {
   shell=${1-$SHELL}
   for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
-}
-
-# Switch PHP version for Homebrew and Laravel Valet
-phpswitch() {
-  ACTIVE_PHP_VERSION=$(php -r 'echo PHP_MAJOR_VERSION;').$(php -r 'echo PHP_MINOR_VERSION;')
-  sudo brew services stop php@$ACTIVE_PHP_VERSION
-  sudo brew services start php@$1
-  brew link --overwrite php@$1
-  valet use --force php@$1
 }
 
 # Quick jump into WordPress theme folder
