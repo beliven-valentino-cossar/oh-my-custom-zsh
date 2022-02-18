@@ -85,10 +85,7 @@ alias sail='bash ./vendor/bin/sail'
 alias valetstop="brew services stop mysql && sudo brew services stop nginx && brew services stop mailhog && brew services stop redis"
 alias valetstart="brew services start mysql && sudo brew services start nginx && brew services start mailhog && brew services start redis"
 
-# WP Sync script
-alias wpsync="./wpsync.sh"
-
-# Pot
+# Pot CLI
 alias pot='./pot.sh'
 
 # Manage
