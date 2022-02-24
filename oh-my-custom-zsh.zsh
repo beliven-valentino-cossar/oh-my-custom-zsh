@@ -145,7 +145,7 @@ timezsh() {
 # Quick jump into WordPress theme folder
 theme() {
   if [ -d "app/web/app/themes/$1" ]; then
-    cd wordpress/web/app/themes/$1
+    cd app/web/app/themes/$1
     return
   fi
   if [ -d "web/app/themes/$1" ]; then
@@ -157,11 +157,11 @@ theme() {
     return
   fi
   if [ -d "themes/$1" ]; then
-    cd wp-content/themes/$1
+    cd themes/$1
     return
   fi
   if [ -d "$1" ]; then
-    cd wp-content/themes/$1
+    cd $1
     return
   fi
   echo "Theme folder doesn't exist!"
