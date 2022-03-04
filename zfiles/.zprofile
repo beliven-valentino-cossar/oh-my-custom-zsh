@@ -1,5 +1,5 @@
-# Load executables installed by Homebrew in /usr/local/sbin
-export PATH="/usr/local/sbin:$PATH"
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # fnm
 eval "$(fnm env)"

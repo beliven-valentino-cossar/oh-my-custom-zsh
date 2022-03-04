@@ -58,7 +58,7 @@ plugins=(
   git
   golang
   laravel
-  osx
+  macos
   vscode
   wp-cli
   z
@@ -78,7 +78,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nano'
+  export EDITOR='vim'
 else
   export EDITOR='code'
 fi
