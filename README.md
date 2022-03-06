@@ -22,6 +22,8 @@ Custom Oh My Zsh folder and other utilities.
 - [PHP](https://www.php.net) - recommended install with `brew install php@8.0 && brew install php` (run `brew link --force php@8.0` after install)
 - [Composer](https://getcomposer.org) - recommended install with `brew install composer`
 - [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) - recommended install with `brew install php-code-sniffer`
+- [Duti](https://github.com/moretension/duti) - recommended install with `/$ZSH_CUSTOM/duti/installer.sh`
+- [dnsmasq](https://wiki.archlinux.org/title/dnsmasq) - recommended install with `/$ZSH_CUSTOM/dnsmasq/installer.sh`
 
 ### Basic Installation
 
@@ -116,8 +118,6 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - azure-cli
 - bat
 - ctop
-- dnsmasq
-- duti
 - gh
 - gnupg
 - hey
@@ -131,40 +131,6 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - watch
 - wget
 - wp-cli
-
-### Duti
-
-Set default app for extension with Duti:
-
-```sh
-duti -s com.microsoft.VSCode txt all
-duti -s com.microsoft.VSCode csv all
-duti -s com.microsoft.VSCode sql all
-duti -s com.microsoft.VSCode xml all
-duti -s com.microsoft.VSCode php all
-duti -s com.microsoft.VSCode css all
-duti -s com.microsoft.VSCode scss all
-duti -s com.microsoft.VSCode less all
-duti -s com.microsoft.VSCode js all
-duti -s com.microsoft.VSCode jsx all
-duti -s com.microsoft.VSCode ts all
-duti -s com.microsoft.VSCode vue all
-duti -s com.microsoft.VSCode json all
-duti -s com.microsoft.VSCode lock all
-duti -s com.microsoft.VSCode md all
-duti -s com.microsoft.VSCode go all
-duti -s com.microsoft.VSCode sh all
-duti -s com.microsoft.VSCode cfg all
-duti -s com.microsoft.VSCode conf all
-duti -s com.microsoft.VSCode ini all
-duti -s com.microsoft.VSCode template all
-duti -s com.microsoft.VSCode bak all
-duti -s com.microsoft.VSCode log all
-duti -s com.microsoft.VSCode yml all
-duti -s com.microsoft.VSCode yaml all
-duti -s com.microsoft.VSCode rb all
-duti -s com.microsoft.VSCode py all
-```
 
 ## Authors
 
