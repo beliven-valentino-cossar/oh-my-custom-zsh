@@ -48,10 +48,8 @@ alias knownhosts="vsa ~/.ssh/known_hosts"
 alias sshconfig="vsa ~/.ssh/config"
 alias resetls="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -seed -r -f -v -domain local -domain user -domain system"
 alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;"
-alias restartbar="sudo pkill TouchBarServer && sudo pkill 'Touch Bar agent' && sudo killall 'ControlStrip'"
 alias clearkext="sudo kextcache --clear-staging"
-# alias lsdropbox="find ~/Dropbox\ \(Personale\) ~/Dropbox\ \(Company\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -print"
-# alias cldropbox="find ~/Dropbox\ \(Personale\) ~/Dropbox\ \(Company\) -path '*(Copia in conflitto di * [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*' -exec rm -f {} \;"
+alias myip="dig +short txt ch whoami.cloudflare @1.0.0.1"
 
 # Git
 alias gcs="git checkout staging"
