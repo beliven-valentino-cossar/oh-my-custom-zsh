@@ -22,7 +22,7 @@ pw() {
 # For further help: pwgen -h
 pwbcrypt() {
   if [[ $1 =~ '^[0-9]+$' ]]; then
-    if [[ $2 == "char" ]]; then
+    if [[ $3 == "char" ]]; then
       PASSWORD=$(pwgen -Bcnsvy -r \<\>\=\+\'\"\?\^\(\)\`\:\~\;\:\[\]\{\}\.\,\\\/\| $1 1 | tr -d "\n");
     else
       PASSWORD=$(pwgen -Bcnsv $1 1 | tr -d "\n");
@@ -30,10 +30,15 @@ pwbcrypt() {
   else
     PASSWORD=$1
   fi
-  BCRYPT_HASH=$(htpasswd -nbBC 10 user $PASSWORD | awk -F 'user:' '{print $2}')
+  if [[ $2 =~ '^[0-9]+$' ]]; then
+    ROUNDS=$2
+  else
+    ROUNDS=10
+  fi
+  BCRYPT_HASH=$(htpasswd -nbBC $ROUNDS user $PASSWORD | awk -F 'user:' '{print $2}')
   echo -e "Password: $PASSWORD"
   echo $BCRYPT_HASH | tr -d "\n" | pbcopy
-  echo -e "Bcrypt hash (copied to clipboard): $BCRYPT_HASH"
+  echo -e "Bcrypt hash with $ROUNDS rounds (copied to clipboard): $BCRYPT_HASH"
 }
 
 # macOS
