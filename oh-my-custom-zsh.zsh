@@ -62,7 +62,7 @@ alias gcs="git checkout staging"
 # ssh-agent
 alias lsssh="ssh-add -L"
 alias clssh="ssh-add -D"
-alias adssh="ssh-add -K ~/.ssh/id_rsa"
+alias adssh="ssh-add --apple-use-keychain ~/.ssh/id_rsa"
 
 # Oh My Zsh and Oh My Custom Zsh
 alias ohmyzsh="cd ~/.oh-my-zsh"
