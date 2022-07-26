@@ -52,7 +52,7 @@ alias exports="vsa /etc/exports"
 alias knownhosts="vsa ~/.ssh/known_hosts"
 alias sshconfig="vsa ~/.ssh/config"
 alias resetls="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -seed -r -f -v -domain local -domain user -domain system"
-alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;"
+alias flushdns="sudo killall -HUP mDNSResponder"
 alias clearkext="sudo kextcache --clear-staging"
 alias myip="dig +short txt ch whoami.cloudflare @1.0.0.1"
 
