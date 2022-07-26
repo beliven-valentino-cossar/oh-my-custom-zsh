@@ -14,7 +14,6 @@ Custom Oh My Zsh folder and other utilities.
 - [Command Line Tools](https://developer.apple.com/xcode/features) - recommended install with `xcode-select --install`
 - [Homebrew](https://brew.sh/index_it.html) - recommended install from website
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - recommended install with curl
-- [Mackup](https://github.com/lra/mackup) - recommended install with `brew install mackup`
 - [fnm](https://github.com/Schniz/fnm) - recommended install with `brew install fnm`
 - [Python](https://www.python.org) - recommended install with `brew install python`
 - [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with `brew install pwgen`
@@ -47,41 +46,29 @@ ln -s $HOME/.oh-my-custom-zsh/zfiles/.zshrc $HOME/.zshrc
 ln -s $HOME/.oh-my-custom-zsh/zfiles/.zprofile $HOME/.zprofile
 ```
 
-4. Create symbolic link of `.mackup.cfg` into your \$HOME folder.
+4. Start a new terminal session.
 
-```sh
-ln -s $HOME/.oh-my-custom-zsh/mackup/.mackup.cfg $HOME/.mackup.cfg
-```
+5. Install all custom themes and plugins.
 
-5. Restore files with mackup.
-
-```sh
-mackup restore
-```
-
-6. Start a new terminal session.
-
-7. Install all custom themes and plugins.
-
-8. Create symbolic link of `.gitconfig` into your \$HOME folder.
+6. Create symbolic link of `.gitconfig` into your \$HOME folder.
 
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/git/.gitconfig $HOME/.gitconfig
 ```
 
-9. Create symbolic link of `.gitconfig_workspace` into your \$HOME folder.
+7. Create symbolic link of `.gitconfig_workspace` into your \$HOME folder.
 
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/git/.gitconfig_workspace $HOME/.gitconfig_workspace
 ```
 
-10. Create symbolic link of `.gitconfig_github` into your \$HOME folder.
+8. Create symbolic link of `.gitconfig_github` into your \$HOME folder.
 
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/git/.gitconfig_github $HOME/.gitconfig_github
 ```
 
-11. Create symbolic link of `.gitignore_global` into your \$HOME folder.
+9. Create symbolic link of `.gitignore_global` into your \$HOME folder.
 
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
