@@ -118,6 +118,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - watch
 - wget
 - wp-cli
+- zbar
 
 ## Authors
 
