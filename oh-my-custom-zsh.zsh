@@ -84,11 +84,8 @@ alias vsls="code --list-extensions"
 # Sail
 alias sail='bash ./vendor/bin/sail'
 
-# Pot CLI
-alias pot='./pot.sh'
-
-# Manage
-alias manage='./manage.sh'
+# Bedo CLI
+alias dock="./bedo.sh"
 
 # Print plist file to stdout (XML format)
 catplist() {
