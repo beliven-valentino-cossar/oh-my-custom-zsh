@@ -111,7 +111,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - hssh (`brew tap heply/tap`)
 - httpie
 - mas
-- mysql-shell
+- mysql-client
 - nmap
 - speedtest (`brew tap teamookla/speedtest`)
 - tree
