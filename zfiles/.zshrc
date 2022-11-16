@@ -117,6 +117,8 @@ SPACESHIP_PYENV_SHOW=false
 SPACESHIP_DOTNET_SHOW=false
 SPACESHIP_EMBER_SHOW=false
 SPACESHIP_KUBECONTEXT_SHOW=false
+SPACESHIP_ANSIBLE_SHOW=true
+SPACESHIP_ANSIBLE_SHOW_VERSION=true
 
 # Override key bindings
 bindkey "^[[A" history-beginning-search-backward
