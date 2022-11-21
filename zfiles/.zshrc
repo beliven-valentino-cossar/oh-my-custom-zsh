@@ -98,28 +98,6 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Spaceship theme settings
-SPACESHIP_CHAR_SYMBOL="→"
-SPACESHIP_CHAR_SUFFIX=" "
-SPACESHIP_DIR_TRUNC=6
-SPACESHIP_ELIXIR_SHOW=false
-SPACESHIP_XCODE_SHOW_LOCAL=false
-SPACESHIP_XCODE_SHOW_GLOBAL=false
-SPACESHIP_SWIFT_SHOW_LOCAL=false
-SPACESHIP_SWIFT_SHOW_GLOBAL=false
-SPACESHIP_RUST_SHOW=false
-SPACESHIP_HASKELL_SHOW=false
-SPACESHIP_JULIA_SHOW=false
-SPACESHIP_AWS_SHOW=false
-SPACESHIP_VENV_SHOW=false
-SPACESHIP_CONDA_SHOW=false
-SPACESHIP_PYENV_SHOW=false
-SPACESHIP_DOTNET_SHOW=false
-SPACESHIP_EMBER_SHOW=false
-SPACESHIP_KUBECONTEXT_SHOW=false
-SPACESHIP_ANSIBLE_SHOW=true
-SPACESHIP_ANSIBLE_SHOW_VERSION=true
-
 # Override key bindings
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward

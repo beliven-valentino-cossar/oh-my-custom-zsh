@@ -50,25 +50,31 @@ ln -s $HOME/.oh-my-custom-zsh/zfiles/.zprofile $HOME/.zprofile
 
 5. Install all custom themes and plugins.
 
-6. Create symbolic link of `.gitconfig` into your \$HOME folder.
+6. Create symbolic link of `.spaceshiprc.zsh` into your \$HOME folder.
+
+```sh
+ln -s $HOME/.oh-my-custom-zsh/spaceship/.spaceshiprc.zsh $HOME/.spaceshiprc.zsh
+```
+
+7. Create symbolic link of `.gitconfig` into your \$HOME folder.
 
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/git/.gitconfig $HOME/.gitconfig
 ```
 
-7. Create symbolic link of `.gitconfig_workspace` into your \$HOME folder.
+8. Create symbolic link of `.gitconfig_workspace` into your \$HOME folder.
 
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/git/.gitconfig_workspace $HOME/.gitconfig_workspace
 ```
 
-8. Create symbolic link of `.gitconfig_github` into your \$HOME folder.
+9. Create symbolic link of `.gitconfig_github` into your \$HOME folder.
 
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/git/.gitconfig_github $HOME/.gitconfig_github
 ```
 
-9. Create symbolic link of `.gitignore_global` into your \$HOME folder.
+10. Create symbolic link of `.gitignore_global` into your \$HOME folder.
 
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
