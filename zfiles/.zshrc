@@ -105,3 +105,6 @@ bindkey "^[[B" history-beginning-search-forward
 # Temporary fix issue autosuggest after incompatible paste and arrow right
 # See https://github.com/zsh-users/zsh-autosuggestions/issues/351
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste accept-line)
+
+# Set zsh-interactive-cd case insensitive
+zic_case_insensitive='true'

@@ -66,7 +66,7 @@ alias adssh="ssh-add --apple-use-keychain ~/.ssh/id_rsa"
 
 # Oh My Zsh and Oh My Custom Zsh
 alias ohmyzsh="cd ~/.oh-my-zsh"
-alias customohmyzsh="cd ~/.oh-my-custom-zsh"
+alias ohmycustomzsh="cd ~/.oh-my-custom-zsh"
 
 # Vagrant
 alias vau="vagrant up"
