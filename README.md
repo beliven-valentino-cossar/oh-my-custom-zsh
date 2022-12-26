@@ -120,6 +120,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - mysql-client
 - nmap
 - speedtest (`brew tap teamookla/speedtest`)
+- terraform
 - tree
 - watch
 - wget
