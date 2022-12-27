@@ -1,6 +1,9 @@
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Path for JetBrains shell scripts
+export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
+
 # fnm
 eval "$(fnm env)"
 
