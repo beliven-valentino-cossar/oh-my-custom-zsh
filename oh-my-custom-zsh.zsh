@@ -56,6 +56,7 @@ alias flushdns="sudo killall -HUP mDNSResponder"
 alias clearkext="sudo kextcache --clear-staging"
 alias myip="dig +short txt ch whoami.cloudflare @1.0.0.1"
 alias qrscan="zbarimg"
+alias pst="phpstorm"
 
 # Git
 alias gcs="git checkout staging"
