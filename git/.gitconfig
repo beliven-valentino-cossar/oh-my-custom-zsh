@@ -4,6 +4,7 @@
 [core]
   editor = code --wait
   excludesfile = ~/.gitignore_global
+  autocrlf = input
 [init]
   defaultBranch = master
 [web]
