@@ -18,9 +18,7 @@ Custom Oh My Zsh folder and other utilities.
 - [Python](https://www.python.org) - recommended install with `brew install python`
 - [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with `brew install pwgen`
 - [Golang](https://golang.org) - recommended install with `brew install go` (run `test -d "${GOPATH}" || mkdir "${GOPATH}"` and `test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"` after install)
-- [PHP](https://www.php.net) - recommended install with `brew install php@8.0 && brew install php` (run `brew link --force php@8.0` after install)
 - [Composer](https://getcomposer.org) - recommended install with `brew install composer`
-- [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) - recommended install with `brew install php-code-sniffer`
 - [Duti](https://github.com/moretension/duti) - recommended install with `/$ZSH_CUSTOM/duti/installer.sh`
 - [dnsmasq](https://wiki.archlinux.org/title/dnsmasq) - recommended install with `/$ZSH_CUSTOM/dnsmasq/installer.sh`
 
@@ -119,6 +117,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - mas
 - mysql-client
 - nmap
+- php@8.2 (`brew install php@8.2 && brew link --force php@8.2`)
 - speedtest (`brew tap teamookla/speedtest`)
 - terraform
 - trash
