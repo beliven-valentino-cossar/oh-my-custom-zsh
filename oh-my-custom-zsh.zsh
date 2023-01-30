@@ -41,6 +41,21 @@ pwbcrypt() {
   echo -e "Bcrypt hash with $ROUNDS rounds (copied to clipboard): $BCRYPT_HASH"
 }
 
+# PhpStorm LightMode
+pste() {
+  if [[ -z "$1" && -f "$1" ]]; then
+    pst -e $1
+  else
+    name="scratch"
+    ext="txt"
+    i=1
+    while [[ -e $HOME/Downloads/$name-$i.$ext || -L $HOME/Downloads/$name-$i.$ext ]]; do
+      let i++
+    done
+    pst -e $HOME/Downloads/$name-$i.$ext
+  fi
+}
+
 # macOS
 alias rm="${aliases[rm]:-rm} -vi"
 alias mv="${aliases[mv]:-mv} -vi"
@@ -56,9 +71,6 @@ alias flushdns="sudo killall -HUP mDNSResponder"
 alias clearkext="sudo kextcache --clear-staging"
 alias myip="dig +short txt ch whoami.cloudflare @1.0.0.1"
 alias qrscan="zbarimg"
-
-# PhpStorm
-alias pste="pst -e"
 
 # Git
 alias gcs="git checkout staging"
