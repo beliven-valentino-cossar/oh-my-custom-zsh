@@ -120,7 +120,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - nmap
 - php@8.2 (`brew install php@8.2 && brew link --force php@8.2`)
 - speedtest (`brew tap teamookla/speedtest`)
-- tctl
+- teleport
 - terraform
 - trash
 - tree
