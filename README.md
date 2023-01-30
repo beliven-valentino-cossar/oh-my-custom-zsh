@@ -104,6 +104,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 
 ## Other Homebrew formulas
 
+- 1password-cli (cask)
 - ack
 - ansible
 - azure-cli
@@ -119,9 +120,11 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - nmap
 - php@8.2 (`brew install php@8.2 && brew link --force php@8.2`)
 - speedtest (`brew tap teamookla/speedtest`)
+- tctl
 - terraform
 - trash
 - tree
+- tsh (cask)
 - watch
 - wget
 - wp-cli
