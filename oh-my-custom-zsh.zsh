@@ -43,7 +43,7 @@ pwbcrypt() {
 
 # PhpStorm LightMode
 pste() {
-  if [[ -z "$1" && -f "$1" ]]; then
+  if [[ ! -z ${1+x} && -f "$1" ]]; then
     pst -e $1
   else
     name="scratch"
