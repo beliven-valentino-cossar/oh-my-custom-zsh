@@ -160,8 +160,8 @@ timezsh() {
 
 # Quick jump into WordPress theme folder
 theme() {
-  if [ -d "app/web/app/themes/$1" ]; then
-    cd app/web/app/themes/$1
+  if [ -d "website/web/app/themes/$1" ]; then
+    cd website/web/app/themes/$1
     return
   fi
   if [ -d "web/app/themes/$1" ]; then
