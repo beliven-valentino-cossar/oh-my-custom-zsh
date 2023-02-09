@@ -60,7 +60,7 @@ pste() {
 alias rm="${aliases[rm]:-rm} -vi"
 alias mv="${aliases[mv]:-mv} -vi"
 alias cp="${aliases[cp]:-cp} -v"
-alias grep="grep --color=auto"
+alias grep="${aliases[grep]:-grep} --color=auto -n"
 alias rmds="find . -name '*.DS_Store' -type f -delete"
 alias hosts="sudo vim /etc/hosts"
 alias exports="sudo vim /etc/exports"
