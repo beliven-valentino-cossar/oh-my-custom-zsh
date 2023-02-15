@@ -13,9 +13,15 @@
   ignoreSubmodules = dirty
 [pull]
   ff = only
-[includeIf "gitdir:~/Workspace/"]
-  path = ~/.gitconfig_workspace
-[includeIf "gitdir:~/GitHub/"]
-  path = ~/.gitconfig_github
+[includeIf "gitdir:~/Workspace/Beliven - GitLab CE/"]
+  path = ~/.oh-my-custom-zsh/git/.gitconfig_glab_ce_beliven
+[includeIf "gitdir:~/Workspace/Beliven - GitLab.com/"]
+  path =~/.oh-my-custom-zsh/git/.gitconfig_glab_com
+[includeIf "gitdir:~/Workspace/Beliven - GitHub.com/"]
+  path = ~/.oh-my-custom-zsh/git/.gitconfig_ghub_com
+[includeIf "gitdir:~/Workspace/Personal - GitHub.com/"]
+  path = ~/.oh-my-custom-zsh/git/.gitconfig_ghub_com_personal
 [includeIf "gitdir:~/.oh-my-custom-zsh/"]
-  path = ~/.gitconfig_github
+  path = ~/.oh-my-custom-zsh/git/.gitconfig_ghub_com_personal
+[includeIf "gitdir:~/Workspace/AQuest - GitLab CE/"]
+  path = ~/.oh-my-custom-zsh/git/.gitconfig_glab_ce_aquest

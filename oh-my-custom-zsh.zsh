@@ -108,49 +108,122 @@ catplist() {
   plutil -convert xml1 -o - $1
 }
 
-# Change workspace
+# Go to projets
 works() {
+  WORKSPACE_PATH="$HOME/Workspace/Beliven - GitLab CE"
   PROJ=$1
-  if [ ! -d "$HOME/Workspace/$PROJ" ] && [ "$PROJ" != "" ]; then
-    echo "$HOME/Workspace/$PROJ is not a directory!"
+
+  if [ ! -d "$WORKSPACE_PATH/$PROJ" ] && [ "$WORKSPACE_PATH/$PROJ" != "" ]; then
+    echo "'$PROJ' is not a directory project or not exists!"
   else
     if [ "$PROJ" = "" ]; then
-      cd $HOME/Workspace
+      cd "$WORKSPACE_PATH"
     else
-      cd $HOME/Workspace/$PROJ
+      cd "$WORKSPACE_PATH/$PROJ"
     fi
   fi
   return
 }
 
-# Change workspace auto completion
+glab() {
+  WORKSPACE_PATH="$HOME/Workspace/Beliven - GitLab.com"
+  PROJ=$1
+
+  if [ ! -d "$WORKSPACE_PATH/$PROJ" ] && [ "$WORKSPACE_PATH/$PROJ" != "" ]; then
+    echo "'$PROJ' is not a directory project or not exists!"
+  else
+    if [ "$PROJ" = "" ]; then
+      cd "$WORKSPACE_PATH"
+    else
+      cd "$WORKSPACE_PATH/$PROJ"
+    fi
+  fi
+  return
+}
+
+ghub() {
+  WORKSPACE_PATH="$HOME/Workspace/Beliven - GitHub.com"
+  PROJ=$1
+
+  if [ ! -d "$WORKSPACE_PATH/$PROJ" ] && [ "$WORKSPACE_PATH/$PROJ" != "" ]; then
+    echo "'$PROJ' is not a directory project or not exists!"
+  else
+    if [ "$PROJ" = "" ]; then
+      cd "$WORKSPACE_PATH"
+    else
+      cd "$WORKSPACE_PATH/$PROJ"
+    fi
+  fi
+  return
+}
+
+ghubp() {
+  WORKSPACE_PATH="$HOME/Workspace/Personal - GitHub.com"
+  PROJ=$1
+
+  if [ ! -d "$WORKSPACE_PATH/$PROJ" ] && [ "$WORKSPACE_PATH/$PROJ" != "" ]; then
+    echo "'$PROJ' is not a directory project or not exists!"
+  else
+    if [ "$PROJ" = "" ]; then
+      cd "$WORKSPACE_PATH"
+    else
+      cd "$WORKSPACE_PATH/$PROJ"
+    fi
+  fi
+  return
+}
+
+aquest() {
+  WORKSPACE_PATH="$HOME/Workspace/AQuest - GitLab CE"
+  PROJ=$1
+
+  if [ ! -d "$WORKSPACE_PATH/$PROJ" ] && [ "$WORKSPACE_PATH/$PROJ" != "" ]; then
+    echo "'$PROJ' is not a directory project or not exists!"
+  else
+    if [ "$PROJ" = "" ]; then
+      cd "$WORKSPACE_PATH"
+    else
+      cd "$WORKSPACE_PATH/$PROJ"
+    fi
+  fi
+  return
+}
+
+# Auto completions for go to projects
 _works() {
-  DIRS=(`ls -d $HOME/Workspace/*/ | xargs -n 1 basename | tr '\n' ' '`)
-  compadd -X 'Select a workspace:' $DIRS
+  WORKSPACE_PATH="$HOME/Workspace/Beliven - GitLab CE"
+  DIRS=(`ls -d "$WORKSPACE_PATH"/*/ | tr -d ' ' | xargs basename | tr '\n' ' '`)
+  compadd -X "Select a 'Beliven - GitLab CE' project:" $DIRS
 }
 compdef _works works
 
-# Change GitHub project
-ghub() {
-  PROJ=$1
-  if [ ! -d "$HOME/GitHub/$PROJ" ] && [ "$PROJ" != "" ]; then
-    echo "$HOME/GitHub/$PROJ is not a directory!"
-  else
-    if [ "$PROJ" = "" ]; then
-      cd $HOME/GitHub
-    else
-      cd $HOME/GitHub/$PROJ
-    fi
-  fi
-  return
+_glab() {
+  WORKSPACE_PATH="$HOME/Workspace/Beliven - GitLab.com"
+  DIRS=(`ls -d "$WORKSPACE_PATH"/*/ | tr -d ' ' | xargs basename | tr '\n' ' '`)
+  compadd -X "Select a 'Beliven - GitLab.com' project:" $DIRS
 }
+compdef _glab glab
 
-# Change GitHub project auto completion
 _ghub() {
-  DIRS=(`ls -d $HOME/GitHub/*/ | xargs -n 1 basename | tr '\n' ' '`)
-  compadd -X 'Select a GitHub project:' $DIRS
+  WORKSPACE_PATH="$HOME/Workspace/Beliven - GitHub.com"
+  DIRS=(`ls -d "$WORKSPACE_PATH"/*/ | tr -d ' ' | xargs basename | tr '\n' ' '`)
+  compadd -X "Select a 'Beliven - GitHub.com' project:" $DIRS
 }
 compdef _ghub ghub
+
+_ghubp() {
+  WORKSPACE_PATH="$HOME/Workspace/Personal - GitHub.com"
+  DIRS=(`ls -d "$WORKSPACE_PATH"/*/ | tr -d ' ' | xargs basename | tr '\n' ' '`)
+  compadd -X "Select a 'Personal - GitHub.com' project:" $DIRS
+}
+compdef _ghubp ghubp
+
+_aquest() {
+  WORKSPACE_PATH="$HOME/Workspace/AQuest - GitLab CE"
+  DIRS=(`ls -d "$WORKSPACE_PATH"/*/ | tr -d ' ' | xargs basename | tr '\n' ' '`)
+  compadd -X "Select a 'AQuest - GitLab CE' project:" $DIRS
+}
+compdef _aquest aquest
 
 # Benchmark shell load time
 timezsh() {

@@ -59,20 +59,7 @@ ln -s $HOME/.oh-my-custom-zsh/spaceship/.spaceshiprc.zsh $HOME/.spaceshiprc.zsh
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/git/.gitconfig $HOME/.gitconfig
 ```
-
-8. Create symbolic link of `.gitconfig_workspace` into your \$HOME folder.
-
-```sh
-ln -s $HOME/.oh-my-custom-zsh/git/.gitconfig_workspace $HOME/.gitconfig_workspace
-```
-
-9. Create symbolic link of `.gitconfig_github` into your \$HOME folder.
-
-```sh
-ln -s $HOME/.oh-my-custom-zsh/git/.gitconfig_github $HOME/.gitconfig_github
-```
-
-10. Create symbolic link of `.gitignore_global` into your \$HOME folder.
+8. Create symbolic link of `.gitignore_global` into your \$HOME folder.
 
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global

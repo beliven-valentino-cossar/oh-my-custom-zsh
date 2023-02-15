@@ -9,3 +9,6 @@ plugins/*
 # Themes
 themes/*
 !themes/.gitkeep
+
+# Git
+git/.gitconfig_glab_ce_*
