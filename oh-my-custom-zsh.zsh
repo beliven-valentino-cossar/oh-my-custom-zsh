@@ -173,6 +173,22 @@ ghubp() {
   return
 }
 
+ado() {
+  WORKSPACE_PATH="$HOME/Workspace/Beliven - Azure DevOps"
+  PROJ=$1
+
+  if [ ! -d "$WORKSPACE_PATH/$PROJ" ] && [ "$WORKSPACE_PATH/$PROJ" != "" ]; then
+    echo "'$PROJ' is not a directory project or not exists!"
+  else
+    if [ "$PROJ" = "" ]; then
+      cd "$WORKSPACE_PATH"
+    else
+      cd "$WORKSPACE_PATH/$PROJ"
+    fi
+  fi
+  return
+}
+
 aquest() {
   WORKSPACE_PATH="$HOME/Workspace/AQuest - GitLab CE"
   PROJ=$1
@@ -217,6 +233,13 @@ _ghubp() {
   compadd -X "Select a 'Personal - GitHub.com' project:" $DIRS
 }
 compdef _ghubp ghubp
+
+_ado() {
+  WORKSPACE_PATH="$HOME/Workspace/Beliven - Azure DevOps"
+  DIRS=(`ls -d "$WORKSPACE_PATH"/*/ | tr -d ' ' | xargs basename | tr '\n' ' '`)
+  compadd -X "Select a 'Beliven - Azure DevOps' project:" $DIRS
+}
+compdef _ado ado
 
 _aquest() {
   WORKSPACE_PATH="$HOME/Workspace/AQuest - GitLab CE"

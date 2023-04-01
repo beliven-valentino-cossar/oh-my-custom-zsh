@@ -23,5 +23,7 @@
   path = ~/.oh-my-custom-zsh/git/.gitconfig_ghub_com_personal
 [includeIf "gitdir:~/.oh-my-custom-zsh/"]
   path = ~/.oh-my-custom-zsh/git/.gitconfig_ghub_com_personal
+[includeIf "gitdir:~/Workspace/Beliven - Azure DevOps/"]
+  path = ~/.oh-my-custom-zsh/git/.gitconfig_azure_devops
 [includeIf "gitdir:~/Workspace/AQuest - GitLab CE/"]
   path = ~/.oh-my-custom-zsh/git/.gitconfig_glab_ce_aquest

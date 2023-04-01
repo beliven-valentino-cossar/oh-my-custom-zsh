@@ -12,3 +12,4 @@ themes/*
 
 # Git
 git/.gitconfig_glab_ce_*
+git/.gitconfig_azure_devops
