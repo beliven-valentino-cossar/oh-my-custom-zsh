@@ -102,6 +102,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - hey
 - hssh (`brew tap heply/tap`)
 - httpie
+- maclaunch
 - mas
 - mysql-client
 - nmap
