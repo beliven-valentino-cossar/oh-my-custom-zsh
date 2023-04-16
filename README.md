@@ -111,7 +111,6 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - terraform
 - trash
 - tree
-- tsh (cask)
 - watch
 - wget
 - wp-cli
