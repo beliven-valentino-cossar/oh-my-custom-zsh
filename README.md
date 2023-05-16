@@ -111,6 +111,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - speedtest (`brew tap teamookla/speedtest`)
 - teleport
 - terraform
+- testssl
 - trash
 - tree
 - watch
