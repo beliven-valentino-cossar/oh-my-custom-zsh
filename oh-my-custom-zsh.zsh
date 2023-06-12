@@ -41,31 +41,16 @@ pwbcrypt() {
   echo -e "Bcrypt hash with $ROUNDS rounds (copied to clipboard): $BCRYPT_HASH"
 }
 
-# PhpStorm LightMode
-pste() {
-  if [[ ! -z ${1+x} && -f "$1" ]]; then
-    pst -e $1
-  else
-    name="scratch"
-    ext="txt"
-    i=1
-    while [[ -e $HOME/Downloads/$name-$i.$ext || -L $HOME/Downloads/$name-$i.$ext ]]; do
-      let i++
-    done
-    pst -e $HOME/Downloads/$name-$i.$ext
-  fi
-}
-
 # macOS
 alias rm="${aliases[rm]:-rm} -vi"
 alias mv="${aliases[mv]:-mv} -vi"
 alias cp="${aliases[cp]:-cp} -v"
 alias grep="${aliases[grep]:-grep} --color=auto -n"
 alias rmds="find . -name '*.DS_Store' -type f -delete"
-alias hosts="sudo vim /etc/hosts"
-alias exports="sudo vim /etc/exports"
-alias knownhosts="pst -e ~/.ssh/known_hosts"
-alias sshconfig="pst -e ~/.ssh/config"
+alias hosts="vsa /etc/hosts"
+alias exports="vsa /etc/exports"
+alias knownhosts="vsa -e ~/.ssh/known_hosts"
+alias sshconfig="vsa -e ~/.ssh/config"
 alias resetls="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -seed -r -f -v -domain local -domain user -domain system"
 alias flushdns="sudo killall -HUP mDNSResponder"
 alias clearkext="sudo kextcache --clear-staging"
