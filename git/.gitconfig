@@ -27,3 +27,5 @@
   path = ~/.oh-my-custom-zsh/git/.gitconfig_azure_devops
 [includeIf "gitdir:~/Workspace/AQuest - GitLab CE/"]
   path = ~/.oh-my-custom-zsh/git/.gitconfig_glab_ce_aquest
+[includeIf "gitdir:~/Workspace/Timenet - GitLab CE/"]
+  path = ~/.oh-my-custom-zsh/git/.gitconfig_glab_ce_timenet
