@@ -191,6 +191,22 @@ aquest() {
   return
 }
 
+timenet() {
+  WORKSPACE_PATH="$HOME/Workspace/Timenet - GitLab CE"
+  PROJ=$1
+
+  if [ ! -d "$WORKSPACE_PATH/$PROJ" ] && [ "$WORKSPACE_PATH/$PROJ" != "" ]; then
+    echo "'$PROJ' is not a directory project or not exists!"
+  else
+    if [ "$PROJ" = "" ]; then
+      cd "$WORKSPACE_PATH"
+    else
+      cd "$WORKSPACE_PATH/$PROJ"
+    fi
+  fi
+  return
+}
+
 # Auto completions for go to projects
 _works() {
   WORKSPACE_PATH="$HOME/Workspace/Beliven - GitLab CE"
@@ -233,6 +249,13 @@ _aquest() {
   compadd -X "Select a 'AQuest - GitLab CE' project:" $DIRS
 }
 compdef _aquest aquest
+
+_timenet() {
+  WORKSPACE_PATH="$HOME/Workspace/Timenet - GitLab CE"
+  DIRS=(`ls -d "$WORKSPACE_PATH"/*/ | tr -d ' ' | xargs basename | tr '\n' ' '`)
+  compadd -X "Select a 'Timenet - GitLab CE' project:" $DIRS
+}
+compdef _timenet timenet
 
 # Benchmark shell load time
 timezsh() {
