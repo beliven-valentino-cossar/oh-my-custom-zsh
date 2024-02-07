@@ -287,36 +287,3 @@ theme() {
   fi
   echo "Theme folder doesn't exist!"
 }
-
-# Auto read and apply .nvmrc with fnm
-applynvmrc() {
-  if [ ! -f ".nvmrc" ]; then
-    return
-  fi
-
-  local node_version="$(node --version | grep -o '[^-]*$')"
-  local nvmrc_node_version="$(cat .nvmrc | tr -d " \t\n\r" )"
-
-  if [ ! -n $nvmrc_node_version ]; then
-    return
-  fi
-
-  case "$(tr -dc '.' <<<"$nvmrc_node_version" | awk '{ print length; }')" in
-    1)
-      if [ "$(echo $node_version | cut -d. -f1).$(echo $node_version | cut -d. -f2)" != $nvmrc_node_version ]; then
-        fnm use $nvmrc_node_version
-      fi
-      ;;
-    2)
-      if [ $node_version != $nvmrc_node_version ]; then
-        fnm use $nvmrc_node_version
-      fi
-      ;;
-    *)
-      if [ "$(echo $node_version | cut -d. -f1)" != $nvmrc_node_version ]; then
-        fnm use $nvmrc_node_version
-      fi
-      ;;
-  esac
-}
-chpwd_functions=(${chpwd_functions[@]} "applynvmrc")

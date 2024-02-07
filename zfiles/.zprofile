@@ -2,7 +2,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # fnm
-eval "$(fnm env)"
+eval "$(fnm env --use-on-cd)"
 
 # Golang
 export GOPATH="$HOME/.go"
