@@ -94,6 +94,19 @@ catplist() {
   plutil -convert xml1 -o - $1
 }
 
+# PHP Version Manager
+pvm() {
+  NEW_VERSION=$1
+  OLD_VERSION=$(php --version | awk '/^PHP/{print $2}' | cut -d'.' -f1,2)
+
+  if [ "NEW_VERSION" != "$OLD_VERSION" ]; then
+    brew unlink php@$OLD_VERSION && brew link --force php@$NEW_VERSION
+  else
+    cd "It's the same version!"
+  fi
+  return
+}
+
 # Go to projets
 works() {
   WORKSPACE_PATH="$HOME/Workspace/Beliven - GitLab CE"
