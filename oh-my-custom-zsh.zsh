@@ -271,7 +271,7 @@ _timenet() {
 compdef _timenet timenet
 
 # Benchmark shell load time
-timezsh() {
+zshbench() {
   shell=${1-$SHELL}
   for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
 }
