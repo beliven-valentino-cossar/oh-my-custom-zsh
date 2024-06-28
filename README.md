@@ -59,6 +59,7 @@ ln -s $HOME/.oh-my-custom-zsh/spaceship/.spaceshiprc.zsh $HOME/.spaceshiprc.zsh
 ```sh
 ln -s $HOME/.oh-my-custom-zsh/git/.gitconfig $HOME/.gitconfig
 ```
+
 8. Create symbolic link of `.gitignore_global` into your \$HOME folder.
 
 ```sh
@@ -108,6 +109,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - nmap
 - openssl
 - php@8.2 (`brew install php@8.2 && brew link --force php@8.2`)
+- pyenv
 - speedtest (`brew tap teamookla/speedtest`)
 - teleport
 - terraform

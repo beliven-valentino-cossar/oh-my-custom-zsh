@@ -14,3 +14,8 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 # OpenSSL
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
