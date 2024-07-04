@@ -96,6 +96,7 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - ack
 - ansible
 - azure-cli
+- b2-tools
 - bat
 - ctop
 - gh
