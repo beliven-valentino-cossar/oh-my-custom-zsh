@@ -6,7 +6,7 @@
   excludesfile = ~/.gitignore_global
   autocrlf = input
 [init]
-  defaultBranch = master
+  defaultBranch = main
 [web]
   browser = edge
 [diff]
