@@ -42,6 +42,7 @@ pwbcrypt() {
 }
 
 # macOS
+alias ll="ls -alhF"
 alias rm="${aliases[rm]:-rm} -vi"
 alias mv="${aliases[mv]:-mv} -vi"
 alias cp="${aliases[cp]:-cp} -v"
