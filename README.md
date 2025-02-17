@@ -101,19 +101,19 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 - ctop
 - gh
 - gnupg
-- hey
 - hssh (`brew tap heply/tap`)
 - httpie
 - maclaunch
 - mas
 - mysql-client
 - nmap
+- oha
 - openssl
+- opentofu
 - php@8.2 (`brew install php@8.2 && brew link --force php@8.2`)
 - pyenv
 - speedtest (`brew tap teamookla/speedtest`)
 - teleport
-- terraform
 - testssl
 - trash
 - tree
