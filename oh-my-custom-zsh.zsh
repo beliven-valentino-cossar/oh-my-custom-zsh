@@ -84,11 +84,14 @@ alias vabu="vagrant box update"
 # Visual Studio Code
 alias vsls="code --list-extensions"
 
+# BeDo CLI
+alias bedo="./bedo.sh"
+
 # Sail
 alias sail='bash ./vendor/bin/sail'
 
-# BeDo CLI
-alias bedo="./bedo.sh"
+# Stalk
+alias stalk="bash ./stalk"
 
 # Print plist file to stdout (XML format)
 catplist() {
