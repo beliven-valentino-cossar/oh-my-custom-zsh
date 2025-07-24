@@ -48,6 +48,7 @@ alias mv="${aliases[mv]:-mv} -vi"
 alias cp="${aliases[cp]:-cp} -v"
 alias grep="${aliases[grep]:-grep} --color=auto -n"
 alias rmds="find . -name '*.DS_Store' -type f -delete"
+alias rmt="trash"
 alias hosts="vsa /etc/hosts"
 alias exports="vsa /etc/exports"
 alias knownhosts="vsa ~/.ssh/known_hosts"
@@ -58,6 +59,15 @@ alias clearkext="sudo kextcache --clear-staging"
 alias myip="dig +short txt ch whoami.cloudflare @1.0.0.1"
 alias qrscan="zbarimg"
 alias weight="tree -a --du -sh"
+
+# Cat
+cat() {
+  if command -v bat &>/dev/null; then
+    bat --paging=never "$@"
+  else
+    command cat "$@"
+  fi
+}
 
 # Git
 alias gcs="git checkout staging"
