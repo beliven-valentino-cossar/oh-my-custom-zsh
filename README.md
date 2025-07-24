@@ -10,17 +10,49 @@ Custom Oh My Zsh folder and other utilities.
 
 **IMPORTANT:** install prerequisites before install Oh My Custom Zsh.
 
-- [Xcode](https://developer.apple.com/xcode) - recommended install from Mac App Store
 - [Command Line Tools](https://developer.apple.com/xcode/features) - recommended install with `xcode-select --install`
 - [Homebrew](https://brew.sh/index_it.html) - recommended install from website
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - recommended install with curl
-- [fnm](https://github.com/Schniz/fnm) - recommended install with `brew install fnm`
-- [Python](https://www.python.org) - recommended install with `brew install python`
-- [pwgen](https://sourceforge.net/projects/pwgen) - recommended install with `brew install pwgen`
-- [Golang](https://golang.org) - recommended install with `brew install go` (run `test -d "${GOPATH}" || mkdir "${GOPATH}"` and `test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"` after install)
-- [Composer](https://getcomposer.org) - recommended install with `brew install composer`
-- [Duti](https://github.com/moretension/duti) - recommended install with `/$ZSH_CUSTOM/duti/installer.sh`
-- [dnsmasq](https://wiki.archlinux.org/title/dnsmasq) - recommended install with `/$ZSH_CUSTOM/dnsmasq/installer.sh`
+
+#### Homebrew dependencies
+
+- ack
+- ansible
+- azure-cli
+- bat
+- btop
+- cloud-sql-proxy
+- composer
+- ctop
+- dnsmasq - recommended install with `/$ZSH_CUSTOM/dnsmasq/installer.sh`
+- duti - recommended install with `/$ZSH_CUSTOM/duti/installer.sh`
+- fnm
+- go - run `test -d "${GOPATH}" || mkdir "${GOPATH}"` and `test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"` after install
+- httpie
+- jq
+- librsvg
+- mysql-client
+- nmap
+- oha
+- ollama
+- opentofu
+- php@8.1
+- php@8.2
+- php@8.3
+- php@8.4
+- poetry
+- pwgen
+- pyenv
+- s3cmd
+- shivammathur/php/php@7.4 - add tap with `brew tap shivammathur/php`
+- shivammathur/php/php@8.0 - add tap with `brew tap shivammathur/php`
+- sqlcmd
+- testssl
+- trash
+- tree
+- watch
+- wget
+- wp-cli
 
 ### Basic Installation
 
@@ -86,41 +118,8 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 ## NPM global packages
 
 - gulp - run `npm i -g gulp`
-- htmlhint - run `npm i -g htmlhint`
 - prettier - run `npm i -g prettier`
-- standard - run `npm i -g standard`
-
-## Other Homebrew formulas
-
-- 1password-cli (cask)
-- ack
-- ansible
-- azure-cli
-- b2-tools
-- bat
-- ctop
-- gh
-- gnupg
-- hssh (`brew tap heply/tap`)
-- httpie
-- maclaunch
-- mas
-- mysql-client
-- nmap
-- oha
-- openssl
-- opentofu
-- php@8.2 (`brew install php@8.2 && brew link --force php@8.2`)
-- pyenv
-- speedtest (`brew tap teamookla/speedtest`)
-- teleport
-- testssl
-- trash
-- tree
-- watch
-- wget
-- wp-cli
-- zbar
+- yarn - run `npm i -g yarn`
 
 ## Authors
 
