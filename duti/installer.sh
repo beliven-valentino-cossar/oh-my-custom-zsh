@@ -28,3 +28,4 @@ duti -s com.microsoft.VSCode yml all
 duti -s com.microsoft.VSCode yaml all
 duti -s com.microsoft.VSCode rb all
 duti -s com.microsoft.VSCode py all
+echo "Duti configuration completed"
