@@ -24,10 +24,11 @@ Custom Oh My Zsh folder and other utilities.
 - cloud-sql-proxy
 - composer
 - ctop
-- dnsmasq - recommended install with `/$ZSH_CUSTOM/dnsmasq/installer.sh`
-- duti - recommended install with `/$ZSH_CUSTOM/duti/installer.sh`
+- dnsmasq - recommended install with `/bin/bash $ZSH_CUSTOM/dnsmasq/installer.sh`
+- duti - recommended install with `/bin/bash $ZSH_CUSTOM/duti/installer.sh`
 - fnm
-- go - run `test -d "${GOPATH}" || mkdir "${GOPATH}"` and `test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"` after install
+- fzf
+- go
 - httpie
 - jq
 - librsvg
@@ -104,7 +105,6 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 
 - [vscode](https://github.com/valentinocossar/vscode) - `git clone https://github.com/valentinocossar/vscode $ZSH_CUSTOM/plugins/vscode`
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - `git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
-- [zsh-interactive-cd](https://github.com/changyuheng/zsh-interactive-cd) - `git clone https://github.com/changyuheng/zsh-interactive-cd $ZSH_CUSTOM/plugins/zsh-interactive-cd`
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - `git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
 
 ### Custom themes
