@@ -60,7 +60,7 @@ Custom Oh My Zsh folder and other utilities.
 1. Clone this repository in your \$HOME folder.
 
 ```sh
-git clone https://github.com/valentinocossar/oh-my-custom-zsh.git ~/.oh-my-custom-zsh
+git clone git@github.com:valentinocossar/oh-my-custom-zsh.git ~/.oh-my-custom-zsh
 ```
 
 2. If your default shell is already /bin/zsh, backup (if you want) and delete these two files.
