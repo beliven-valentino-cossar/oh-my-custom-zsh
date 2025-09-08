@@ -99,6 +99,12 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitconfig $HOME/.gitconfig
 ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 ```
 
+9. Create symbolic link of `.vimrc` into your \$HOME folder.
+
+```sh
+ln -s $HOME/.oh-my-custom-zsh/vim/.vimrc $HOME/.vimrc
+```
+
 ## Using Oh My Custom Zsh
 
 ### Custom plugins
