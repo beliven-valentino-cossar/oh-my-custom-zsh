@@ -49,6 +49,7 @@ Custom Oh My Zsh folder and other utilities.
 - shivammathur/php/php@8.0 - add tap with `brew tap shivammathur/php`
 - sqlcmd
 - testssl
+- tlrc
 - trash
 - tree
 - watch
