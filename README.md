@@ -106,6 +106,12 @@ ln -s $HOME/.oh-my-custom-zsh/git/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.oh-my-custom-zsh/vim/.vimrc $HOME/.vimrc
 ```
 
+10. Create symbolic link of `.ansible.cfg` into your \$HOME folder.
+
+```sh
+ln -s $HOME/.oh-my-custom-zsh/ansible/.ansible.cfg $HOME/.ansible.cfg
+```
+
 ## Using Oh My Custom Zsh
 
 ### Custom plugins
