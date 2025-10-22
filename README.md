@@ -31,6 +31,7 @@ Custom Oh My Zsh folder and other utilities.
 - go
 - httpie
 - jq
+- libpq
 - librsvg
 - mysql-client
 - nmap
