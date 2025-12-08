@@ -19,9 +19,9 @@
   path =~/.oh-my-custom-zsh/git/.gitconfig_glab_com
 [includeIf "gitdir:~/Workspace/Beliven - GitHub.com/"]
   path = ~/.oh-my-custom-zsh/git/.gitconfig_ghub_com
-[includeIf "gitdir:~/Workspace/Personal - GitHub.com/"]
-  path = ~/.oh-my-custom-zsh/git/.gitconfig_ghub_com_personal
 [includeIf "gitdir:~/.oh-my-custom-zsh/"]
+  path = ~/.oh-my-custom-zsh/git/.gitconfig_ghub_com
+[includeIf "gitdir:~/Workspace/Personal - GitHub.com/"]
   path = ~/.oh-my-custom-zsh/git/.gitconfig_ghub_com_personal
 [includeIf "gitdir:~/Workspace/Beliven - Azure DevOps/"]
   path = ~/.oh-my-custom-zsh/git/.gitconfig_azure_devops
