@@ -1,0 +1,20 @@
+[tools]
+ansible = { version = "13.4", pipx_args = "--include-deps", uvx = "false" }
+go = "1.26"
+node = "24"
+opentofu = "1.11"
+php = "8.4"
+pipx = "1.8"
+"pipx:poetry" = "2.3"
+python = "3.14"
+
+[settings]
+idiomatic_version_file_enable_tools = [
+  "node",
+  "python",
+  "go"
+]
+trusted_config_paths = [
+  "~/.oh-my-custom-zsh",
+  "~/Workspace"
+]
