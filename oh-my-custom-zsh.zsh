@@ -265,19 +265,6 @@ zshbench() {
   for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
 }
 
-# PHP Version Manager
-pvm() {
-  NEW_VERSION=$1
-  OLD_VERSION=$(php --version | awk '/^PHP/{print $2}' | cut -d'.' -f1,2)
-
-  if [ "NEW_VERSION" != "$OLD_VERSION" ]; then
-    brew unlink php@$OLD_VERSION && brew link --force php@$NEW_VERSION
-  else
-    cd "It's the same version!"
-  fi
-  return
-}
-
 # Quick jump into WordPress theme folder
 theme() {
   if [ -d "website/web/app/themes/$1" ]; then
