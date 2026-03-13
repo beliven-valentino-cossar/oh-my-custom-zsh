@@ -14,8 +14,15 @@ Custom Oh My Zsh folder and other utilities.
 - [Homebrew](https://brew.sh/index_it.html) - recommended install from website
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - recommended install with curl
 
-#### Homebrew dependencies
+#### Homebrew dependencies (install order matters)
 
+- shivammathur/php/php@7.4 - add tap with `brew tap shivammathur/php`
+- shivammathur/php/php@8.0 - add tap with `brew tap shivammathur/php`
+- shivammathur/php/php@8.1 - add tap with `brew tap shivammathur/php`
+- shivammathur/php/php@8.2 - add tap with `brew tap shivammathur/php`
+- shivammathur/php/php@8.3 - add tap with `brew tap shivammathur/php`
+- shivammathur/php/php@8.4 - add tap with `brew tap shivammathur/php`
+- shivammathur/php/php@8.5 - add tap with `brew tap shivammathur/php`
 - ack
 - azure-cli
 - bat
@@ -37,13 +44,6 @@ Custom Oh My Zsh folder and other utilities.
 - oha
 - pwgen
 - s3cmd
-- shivammathur/php/php@7.4 - add tap with `brew tap shivammathur/php`
-- shivammathur/php/php@8.0 - add tap with `brew tap shivammathur/php`
-- shivammathur/php/php@8.1 - add tap with `brew tap shivammathur/php`
-- shivammathur/php/php@8.2 - add tap with `brew tap shivammathur/php`
-- shivammathur/php/php@8.3 - add tap with `brew tap shivammathur/php`
-- shivammathur/php/php@8.4 - add tap with `brew tap shivammathur/php`
-- shivammathur/php/php@8.5 - add tap with `brew tap shivammathur/php`
 - sqlcmd
 - testssl
 - tlrc
