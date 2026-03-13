@@ -23,6 +23,9 @@ Custom Oh My Zsh folder and other utilities.
 - shivammathur/php/php@8.3 - add tap with `brew tap shivammathur/php`
 - shivammathur/php/php@8.4 - add tap with `brew tap shivammathur/php`
 - shivammathur/php/php@8.5 - add tap with `brew tap shivammathur/php`
+- beliven-it/tap/hssh - add tap with `brew tap beliven-it/tap`
+- beliven-it/tap/opsi - add tap with `brew tap beliven-it/tap`
+- beliven-it/tap/tssh - add tap with `brew tap beliven-it/tap`
 - ack
 - azure-cli
 - bat
