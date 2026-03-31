@@ -59,7 +59,6 @@ plugins=(
   golang
   laravel
   macos
-  pyenv
   vscode
   wp-cli
   z

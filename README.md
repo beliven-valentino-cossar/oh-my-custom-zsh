@@ -36,7 +36,6 @@ Custom Oh My Zsh folder and other utilities.
 - dnsmasq - recommended install with `/bin/bash $ZSH_CUSTOM/dnsmasq/installer.sh`
 - duti - recommended install with `/bin/bash $ZSH_CUSTOM/duti/installer.sh`
 - fzf
-- go
 - httpie
 - jq
 - libpq
