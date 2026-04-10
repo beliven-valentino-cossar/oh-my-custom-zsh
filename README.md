@@ -135,6 +135,12 @@ brew unlink php
 mise link php@X.Y $(brew --prefix php@X.Y)
 ```
 
+- Install mise tools.
+
+```sh
+cd $HOME && mise install
+```
+
 ## Using Oh My Custom Zsh
 
 ### Custom plugins
