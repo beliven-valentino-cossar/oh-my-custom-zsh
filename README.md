@@ -141,6 +141,13 @@ mise link php@X.Y $(brew --prefix php@X.Y)
 cd $HOME && mise install
 ```
 
+- Create symbolic link of `ccstatusline/settings.json` into your \$HOME folder.
+
+```sh
+mkdir $HOME/.config/ccstatusline
+ln -s $HOME/.oh-my-custom-zsh/ccstatusline/settings.json $HOME/.config/ccstatusline/settings.json
+```
+
 ## Using Oh My Custom Zsh
 
 ### Custom plugins

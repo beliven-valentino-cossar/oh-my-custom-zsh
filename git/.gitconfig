@@ -5,6 +5,7 @@
   editor = code --wait
   excludesfile = ~/.gitignore_global
   autocrlf = input
+	hooksPath = /Users/valentino.cossar/.config/git/hooks
 [init]
   defaultBranch = main
 [web]
