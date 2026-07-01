@@ -4,6 +4,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Mise-en-place
 eval "$(mise activate zsh)"
 
+# Local binaries
+export PATH="$HOME/.local/bin:$PATH"
+
 # Golang
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
